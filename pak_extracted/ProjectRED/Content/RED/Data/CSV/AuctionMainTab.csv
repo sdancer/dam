@@ -1,0 +1,9 @@
+﻿SortId,AuctionTabType,IsEnchantable,IsFavorite
+100,0,0,1
+200,1,1,0
+300,2,1,0
+400,3,1,0
+500,7,1,0
+600,6,0,0
+700,4,0,0
+800,5,0,0

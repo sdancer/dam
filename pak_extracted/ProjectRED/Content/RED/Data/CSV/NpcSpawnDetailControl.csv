@@ -1,0 +1,4 @@
+﻿Id,ConquestWinnerPrivilege,TaskRepeat,SelectableHourStart,SelectableHourEnd,TotalSpawnCount,IntervalDay,IntervalHour,DefaultDayOfWeek,DefaultHour,DefaultMinute
+1001,1,3,20,20,1,,,7,20,0
+1002,1,3,12,12,1,,,7,12,0
+2002,2,4,22,22,1,,,6,22,0

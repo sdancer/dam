@@ -1,0 +1,11 @@
+﻿Id,TitleFrameTexture,TitleFrameMaterial,TextFrameTexture,TextFrameMaterial
+1,,,IMG_DialogFrame_01,
+2,IMG_MiniDialogLabel_01,,IMG_MiniDialogFrame_01,
+3,,,IMG_DialogFrame_00,MI_DialogFrame_01
+4,IMG_MiniDialogLabel_01,MI_DialogLabel_01,,
+5,,,IMG_DialogFrame_00,MI_DialogFrame_00
+6,,,IMG_DialogFrame_Player,MI_DialogFrame_00
+7,,,IMG_DialogFrame_Prophet,MI_DialogFrame_00
+8,,,IMG_DialogFrame_Cain,MI_DialogFrame_Cain
+9,IMG_MiniDialogLabel_00,MI_MiniDialogFrame_00,IMG_MiniDialogFrame_00,MI_MiniDialogLabel_00
+10,IMG_MiniDialogLabel_Prophet,MI_MiniDialogLabel_Prophet,,

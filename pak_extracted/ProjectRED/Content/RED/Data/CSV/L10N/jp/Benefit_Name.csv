@@ -1,0 +1,11 @@
+﻿Id,Name,Description,L10NOrder,L10NRegistrationDate,Untranslated
+100,オルガの恩寵,"<SkillEffect>無料経験値復元回数+5回</>
+<SkillEffect>自動整備時間+16時間</>
+<SkillEffect>自動整備時、分解機能利用権限</>
+<SkillEffect>非接続モード時間+2時間</>
+<SkillEffect>デイリークエスト制限回数+2回</>
+<SkillEffect>デイリークエスト即時クリア+7回</>
+<SkillEffect>個人取引利用権限</>
+<SkillEffect>モンスター制圧力+8</>",0521,2025-09-09 16:31:55,
+200,オルガの取引,<SkillEffect>取引所に販売登録できる商品数+5</>,0521,2025-09-09 16:31:55,
+300,2025-09-09 Registered,適用ワールド：ゲヘナ,0521,2025-09-09 16:31:55,Name

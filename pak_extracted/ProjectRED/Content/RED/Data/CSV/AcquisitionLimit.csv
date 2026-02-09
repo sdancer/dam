@@ -1,0 +1,4 @@
+﻿Id,AcquisitionType,AcquisitionParam,AcquisitionScheduleType,AcquisitionLimitCount,AcquisitionTargetType,IsRetentionReset
+1,0,EventDiamond,29,1000,1,0
+2,0,GehennaPoint,22,320000,0,0
+3,0,GehennaPointWeekly,22,320000,0,1

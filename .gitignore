@@ -6,8 +6,7 @@ config.*.apk
 # Python venv
 .venv/
 
-# Extracted PAK files
-pak_extracted/
+# Extracted PAK files - CSVs are tracked separately
 
 # APK metadata
 META-INF/

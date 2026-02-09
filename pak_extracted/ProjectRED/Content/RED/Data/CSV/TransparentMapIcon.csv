@@ -1,0 +1,11 @@
+﻿Id,GroupId,Hide,Img,IconScale,Order
+1,,0,IMG_MapIcon_Player,0.500000,100
+21,,0,IMG_MapIcon_Assembly_Party,0.500000,100
+22,,0,IMG_MapIcon_Assembly_Guild,0.500000,100
+110,,0,IMG_MapIcon_Player_Guild,0.700000,97
+111,,0,IMG_MapIcon_Player_Party01,0.700000,98
+112,,0,IMG_MapIcon_Player_Party02,0.700000,98
+113,,0,IMG_MapIcon_Player_Party03,0.700000,98
+114,,0,IMG_MapIcon_Player_Party04,0.700000,98
+115,,0,IMG_MapIcon_Player_Party05,0.700000,98
+120,,0,IMG_MapIcon_Player_Guild,0.500000,98

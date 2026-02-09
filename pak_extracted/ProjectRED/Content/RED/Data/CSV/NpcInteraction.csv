@@ -1,0 +1,12 @@
+﻿GroupId,Type,Param,Animation,UsualImg,ActiveButtonImg
+1,2,1,Hello01,Image/IMG_Flat_Chat,Image/IMG_Flat_Chat
+1,1,1001,Hello01,Image/IMG_Flat_Quest,Image/IMG_Flat_Quest
+2,3,Storage,Talk01,Image/IMG_NPCShop_Storage,Image/IMG_NPCShop_Menu_Storage
+3,3,NpcShopNormal,Talk01,Image/IMG_NPCShop_Normal,Image/IMG_NPCShop_Menu_Normal
+4,3,NpcShopSkill,Talk01,Image/IMG_NPCShop_Skill,Image/IMG_NPCShop_Menu_Skill
+5,3,NpcShopEquipment,Talk01,Image/IMG_NPCShop_Equipment,Image/IMG_NPCShop_Menu_Equipment
+6,3,NpcShopContentCoin,Talk01,Image/IMG_NPCShop_ContentCoin,Image/IMG_NPCShop_Menu_ContentCoin
+7,3,NpcShopGuildCoin,Talk01,Image/IMG_NPCShop_GuildCoin,Image/IMG_NPCShop_Menu_GuildCoin
+8,3,NpcShopFollower,Talk01,Image/IMG_NPCShop_NpcFollower,Image/IMG_NPCShop_Menu_NpcFollower
+9,3,NpcShopPkPoint,Talk01,Image/IMG_NpcShop_PKPoint,Image/IMG_NPCShop_Menu_PKPoint
+10,3,NpcShopEliteCoin,Talk01,Image/IMG_NpcShop_EliteDungeonPoint,Image/IMG_NpcShop_Menu_EliteDungeonPoint

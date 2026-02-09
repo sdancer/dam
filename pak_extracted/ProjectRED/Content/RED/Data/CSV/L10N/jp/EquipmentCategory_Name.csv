@@ -1,0 +1,4 @@
+﻿Category,Type,EquipLockCondition,EquipLockNotice,L10NOrder,L10NRegistrationDate,Untranslated
+Accessory,Crest,紋章スロットロック,紋章スロットがロックされています。(解禁条件：[Value]),0521,2025-12-15 12:50:02,
+Relic,PocketWatch,懐中時計スロットロック,懐中時計スロットがロックされています。(解禁条件：[Value]),0521,2025-12-15 12:50:02,
+Relic,Diary,日記帳スロットロック,日記帳スロットがロックされています。(解禁条件：[Value]),0521,2025-12-15 12:50:02,

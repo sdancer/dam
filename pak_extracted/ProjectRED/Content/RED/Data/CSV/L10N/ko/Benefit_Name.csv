@@ -1,0 +1,11 @@
+﻿Id,Name,Description,L10NOrder,L10NRegistrationDate,Untranslated
+100,올가의 은총,"<SkillEffect>무료 경험치 복구 횟수 +5회</>
+<SkillEffect>자동 정비 시간 증가 +16시간</> 
+<SkillEffect>자동 정비 시 분해 기능 이용 권한</>
+<SkillEffect>비접속 모드 시간 +2시간</>
+<SkillEffect>일일 퀘스트 제한 횟수 +2회</>
+<SkillEffect>일일 퀘스트 즉시 완료 +7회</> 
+<SkillEffect>개인 거래 이용 권한</>
+<SkillEffect>몬스터 제압력 +8</>",,,
+200,올가의 거래,<SkillEffect>거래소 판매 등록 가능 개수 +5</>,,,
+300,사망 패널티 면역 (Test),적용 월드 : 게헨나,,,

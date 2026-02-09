@@ -1,0 +1,6 @@
+﻿PenaltyLevel,PenaltyValue,PenaltyEffect,PenaltyMarkImg
+1,4000,10001,TEX_PvpPenalty_01
+2,7500,10002,TEX_PvpPenalty_02
+3,10000,10003,TEX_PvpPenalty_03
+4,12500,10004,TEX_PvpPenalty_04
+5,15000,10005,TEX_PvpPenalty_05

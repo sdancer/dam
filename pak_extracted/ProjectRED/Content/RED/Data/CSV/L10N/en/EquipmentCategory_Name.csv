@@ -1,0 +1,4 @@
+﻿Category,Type,EquipLockCondition,EquipLockNotice,L10NOrder,L10NRegistrationDate,Untranslated
+Accessory,Crest,Crest Slot Locked,Crest slot is locked. (Unlock Condition: [Value]),0521,2025-12-15 12:50:02,
+Relic,PocketWatch,Pocket Watch Slot Locked,Pocket Watch slot is locked. (Unlock Condition: [Value]),0521,2025-12-15 12:50:02,
+Relic,Diary,Diary Slot Locked,Diary slot is locked. (Unlock Condition: [Value]),0521,2025-12-15 12:50:02,

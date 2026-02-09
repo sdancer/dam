@@ -1,0 +1,10 @@
+﻿Id,WorldIdMultiString,RoomLimitType,RoomTypeList
+1,"10015,10016,10017",2,
+2,"20001,20002",2,
+901,20001,2,
+902,,0,NormalDungeonWorld
+903,,1,NormalDungeonWorld
+904,20001,0,NormalDungeonWorld
+905,20001,1,NormalDungeonWorld
+906,20001,0,QuestWorld
+907,20001,1,QuestWorld

@@ -1,0 +1,13 @@
+﻿Id,CollectionType,Img,Type,InventoryCategory
+111,0,IMG_CostumeArmorRarityType_Common,0,4
+112,0,IMG_CostumeArmorRarityType_Uncommon,1,5
+113,0,IMG_CostumeArmorRarityType_Rare,2,6
+114,0,IMG_CostumeArmorRarityType_Epic,3,7
+115,0,IMG_CostumeArmorRarityType_Legendary,4,8
+116,0,IMG_CostumeArmorRarityType_Mythic,5,9
+201,2,IMG_VehicleRarityType_Common,0,4
+202,2,IMG_VehicleRarityType_Uncommon,1,5
+203,2,IMG_VehicleRarityType_Rare,2,6
+204,2,IMG_VehicleRarityType_Epic,3,7
+205,2,IMG_VehicleRarityType_Legendary,4,8
+206,2,IMG_VehicleRarityType_Mythic,5,9

@@ -1,0 +1,8 @@
+﻿GuildRank,Name,Description,L10NOrder,L10NRegistrationDate,Untranslated
+Rank01,일반 클랜,일반 클랜,,,
+Rank02,정예 클랜,"클랜 랭킹 1~3위
+(클랜 보상 지급 시점)",,,
+ConquestRank01,마스터 클랜,"[쟁탈전] 전초전 1위
+(전초전 종료 시점 기준)",,,
+ConquestRank02,로드 클랜,"[쟁탈전] 결승전 1위
+(결승전 종료 시점 기준)",,,

@@ -1,0 +1,6 @@
+﻿TaxType,Name,L10NOrder,L10NRegistrationDate,Untranslated
+Auction,기본 세율,,,
+Conquest,서버 누적 세율,,,
+GroupSiege,서버 그룹 누적 세율,,,
+GlobalSiege,전서버 전쟁 보상 세율,,,
+AuctionPersonal,개인 거래 세율,,,

@@ -1,0 +1,11 @@
+﻿PointRank,WorldType,PointType,PointMin,PointMax,ResultPointMin,ResultPointMaX,Img
+1,11,55,0,49999,250,500,IMG_ServerGroupDungeon_PointRank_01
+2,11,55,50000,99999,500,1100,IMG_ServerGroupDungeon_PointRank_02
+3,11,55,100000,149999,800,2000,IMG_ServerGroupDungeon_PointRank_03
+4,11,55,150000,249999,1100,2900,IMG_ServerGroupDungeon_PointRank_04
+5,11,55,250000,349999,1500,4300,IMG_ServerGroupDungeon_PointRank_05
+6,11,55,350000,449999,1900,5900,IMG_ServerGroupDungeon_PointRank_06
+7,11,55,450000,549999,2300,7700,IMG_ServerGroupDungeon_PointRank_07
+8,11,55,550000,649999,2700,9600,IMG_ServerGroupDungeon_PointRank_08
+9,11,55,650000,749999,3100,11700,IMG_ServerGroupDungeon_PointRank_09
+10,11,55,750000,1000000,3500,14000,IMG_ServerGroupDungeon_PointRank_10

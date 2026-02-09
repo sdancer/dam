@@ -1,0 +1,6 @@
+﻿NobleRank,RewardCostumeArmorId,RewardSkillInfo,RewardSkillGroupId,RewardStaticOperationGroupId,ImgChangePortraitFarme,ImgNobleIcon,ImgNobleButton,FontColor,ContentsShortcutId
+1,,205003,2050031,1110,IMG_PortraitFrame_Noble_01,TEX_Noble_Icon_01,TEX_Noble_Button_01,Chat_Noble,320001
+2,,15040,150401,1120,IMG_PortraitFrame_Noble_02,TEX_Noble_Icon_02,TEX_Noble_Button_02,Chat_Noble,320001
+3,,15010,150101,1130,IMG_PortraitFrame_Noble_03,TEX_Noble_Icon_03,TEX_Noble_Button_03,Chat_Noble,320001
+4,,15020,150201,1140,IMG_PortraitFrame_Noble_04,TEX_Noble_Icon_04,TEX_Noble_Button_04,Chat_Noble,320001
+5,,15031,15030,1150,IMG_PortraitFrame_Noble_05,TEX_Noble_Icon_05,TEX_Noble_Button_05,Chat_Noble,320001

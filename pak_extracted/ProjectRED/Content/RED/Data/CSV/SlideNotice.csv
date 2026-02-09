@@ -1,0 +1,8 @@
+﻿Type,ResPath,PositiveButtonUse,NegativeButtonUse,Duration,SwipeDeleteEnable,Vibration,AppearSoundName
+1,WBP_SlideNoticeBaseT,1,1,10,0,0,
+2,WBP_SlideNoticeBaseT,1,1,10,0,0,
+3,WBP_SlideNoticeBaseT,1,1,10,0,0,
+4,WBP_SlideNoticeBaseT,1,1,20,0,0,
+5,WBP_SlideNoticeDungeonT,1,1,10,0,0,
+6,WBP_SlideNoticeGuildDungeonInfoT,1,1,10,0,0,
+7,WBP_SlideNoticeBaseT,1,1,10,0,0,

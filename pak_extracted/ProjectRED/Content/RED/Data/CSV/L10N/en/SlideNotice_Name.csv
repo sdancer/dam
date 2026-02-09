@@ -1,0 +1,8 @@
+﻿Type,Message,SubMessage,PositiveButtonName,NegativeButtonName,L10NOrder,L10NRegistrationDate,Untranslated
+Default,2025-05-21 Registered,2025-05-21 Registered,Confirm,Cancel,0521,2025-05-21 16:11:24,Message|SubMessage
+PartyInvited,<NICKNAME>[Name]</>'s Party Invite,Would you like to join the Party?,Accept,Reject,0521,2025-05-21 16:11:24,
+RaidTeamInvited,<NICKNAME>[Name]</>'s Raid Group Invite,Would you like to join the Raid Group?,Accept,Reject,0521,2025-05-21 16:11:24,
+RaidTeamReady,Raid Group Ready Check,Are you ready for battle?,Accept,Reject,0521,2025-05-21 16:11:24,
+DungeonPartyInvited,<NICKNAME>[Name]</>'s Party Invite,[Epic Dungeon] [DungeonName],Accept,Reject,0521,2025-05-21 16:11:24,
+GuildDungeon,<NICKNAME>[Name]</>'s Mission Request,[Clan Mission] [DungeonName],Accept,Reject,0521,2025-11-07 12:00:23,
+RaidTeamDelegate,<NICKNAME>[Name]</>'s raid leader delegation request,Do you want to accept the delegation?,Accept,Reject,0521,2025-12-15 12:50:35,

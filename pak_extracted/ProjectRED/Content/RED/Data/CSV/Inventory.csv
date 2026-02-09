@@ -1,0 +1,10 @@
+﻿Id,Type,DefaultSlotCount,MaxIncreaseableCountByCost,SlotCountByExpand,SlotCostByExpand,SlotAlertFirstCondition,SlotAlertSecondCondition
+1,0,100,75,4,50,20,5
+2,1,100,0,0,0,,
+3,2,100,0,0,0,,
+4,3,100,0,0,0,,
+5,4,100,0,0,0,,
+6,5,100,0,0,0,,
+7,6,50,25,4,50,,
+8,7,100,0,0,0,,
+9,8,200,0,0,0,,

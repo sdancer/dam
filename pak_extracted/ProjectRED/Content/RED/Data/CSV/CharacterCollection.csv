@@ -1,0 +1,5 @@
+﻿Id,CollectionTitle,UnlockQuestInfoId,RelationshipChartGroupId,NeedEpisodePoint1,NeedEpisodePoint2,NeedEpisodePoint3,NeedEpisodePoint4,NeedEpisodePoint5,EpisodeRewardGroupId1,EpisodeRewardGroupId2,EpisodeRewardGroupId3,EpisodeRewardGroupId4,EpisodeRewardGroupId5,DisplayRewardStep
+1,크르브나,120110,1,2,4,6,8,10,40130110,40130120,40130130,40130140,40130150,5
+2,포에나리,140110,2,2,4,6,8,10,40230110,40230120,40230130,40230140,40230150,5
+3,키셀,170110,3,2,4,6,8,10,40330110,40330120,40330130,40330140,40330150,5
+4,베즈단,200110,4,2,4,5,7,10,40430110,40430120,40430130,,,3

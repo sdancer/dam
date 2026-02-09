@@ -1,0 +1,14 @@
+﻿Id,Img,Order
+9,IMG_MapIcon_TownBloodGate,1
+8,IMG_MapIcon_BaseBloodGate,2
+10,IMG_MapIcon_HuntingArea,3
+11,IMG_MapIcon_FieldBoss,4
+1,IMG_MapIcon_ScenarioQuest,6
+3,IMG_MapIcon_SubQuest,7
+2,IMG_MapIcon_DailyQuest,8
+5,IMG_MapIcon_GuideQuest,9
+4,IMG_MapIcon_BloodlineQuest,10
+6,IMG_MapIcon_Location_Memory,11
+7,IMG_MapIcon_Marker,12
+0,IMG_MapIcon_StoreNpc,13
+12,IMG_MapIcon_LiftGadget,14

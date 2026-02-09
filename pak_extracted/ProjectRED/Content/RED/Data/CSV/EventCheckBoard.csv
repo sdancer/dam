@@ -1,0 +1,4 @@
+﻿Id,Image,BP,OpenTicketItemId,CardRewardGroupId,CountRewardGroupId,RewardTarget
+10,IMG_Event_BG_Minigame_01,WBP_EventCheckBoard,912,1,1,1
+70001001,IMG_Event_BG_EventCheckBoard_01,WBP_EventCheckBoard,100000963,70001,7000001,1
+70001002,IMG_Event_BG_EventCheckBoard_02,WBP_EventCheckBoard,100010045,70100,7000100,1

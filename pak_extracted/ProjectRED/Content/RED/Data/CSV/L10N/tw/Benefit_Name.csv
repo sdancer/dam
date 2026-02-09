@@ -1,0 +1,11 @@
+﻿Id,Name,Description,L10NOrder,L10NRegistrationDate,Untranslated
+100,奧麗嘉的恩寵,"<SkillEffect>免費經驗值復原次數 +5 次</>
+<SkillEffect>自動整備時間增加 +16 小時</>
+<SkillEffect>自動整備時可使用分解功能</>
+<SkillEffect>離線模式時間 +2 小時</>
+<SkillEffect>每日委託限制次數 +2 次</>
+<SkillEffect>立即完成每日委託 +7 次</>
+<SkillEffect>個人交易使用權限</>
+<SkillEffect>魔獸壓制力 +8</>",0521,2025-09-09 16:31:55,
+200,奧麗嘉的交易,<SkillEffect>交易所可登錄販售數量 +5</>,0521,2025-09-09 16:31:55,
+300,2025-09-09 Registered,適用世界：欣嫩谷,0521,2025-09-09 16:31:55,Name

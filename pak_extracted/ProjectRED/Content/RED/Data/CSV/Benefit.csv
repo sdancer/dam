@@ -1,0 +1,4 @@
+﻿Id,Duration,OverlayType,UseEffectPanel,ExceptAlert,Img,ImgBg,ImgSmall,ImgBgSmall
+100,2419200000,2,1,1,Item/IMG_Item_Subscription_01, ,IMG_Item_Subscription_01_Small,
+200,2419200000,0,1,1,,,,
+300,2419200000,2,1,1,Item/IMG_Item_Subscription_01, ,IMG_Item_Subscription_01_Small,

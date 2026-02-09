@@ -1,0 +1,9 @@
+﻿Id,DecoType,FilterType,IconTexture,ImageTexture,MinSizeFactor,MaxSizeFactor
+1,0,4,Icon/Img_Screenshot_Sticker_1,Icon/Img_Screenshot_Sticker_1,0.500000,1.500000
+2,0,4,Icon/Img_Screenshot_Sticker_2,Icon/Img_Screenshot_Sticker_2,0.500000,1.500000
+100,1,4,Icon/Img_Screenshot_Frame_0,,,
+101,1,4,Icon/Img_Screenshot_Frame_1_Small,Icon/Img_Screenshot_Frame_1_Large,,
+200,2,0,Icon/Img_Screenshot_Frame_0,,,
+201,2,1,Icon/Icon_ScreenShot_Filter_Mono,,,
+202,2,2,Icon/Icon_ScreenShot_Filter_Bloom,,,
+203,2,3,Icon/Icon_ScreenShot_Filter_Dof,,,

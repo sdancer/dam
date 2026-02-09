@@ -1,0 +1,8 @@
+﻿Type,Message,SubMessage,PositiveButtonName,NegativeButtonName,L10NOrder,L10NRegistrationDate,Untranslated
+Default,테스트 입니다,서브 텍스트 테스트 입니다,확인,취소,,,
+PartyInvited,<NICKNAME>[Name]</>의 파티 초대,파티에 가입하시겠습니까?,수락,거부,,,
+RaidTeamInvited,<NICKNAME>[Name]</>의 공격대 초대,공격대에 가입하시겠습니까?,수락,거부,,,
+RaidTeamReady,공격대 준비상태 확인,전투 준비를 마치셨습니까?,수락,거부,,,
+DungeonPartyInvited,<NICKNAME>[Name]</>의 파티 초대,[에픽 던전] [DungeonName],수락,거부,,,
+GuildDungeon,<NICKNAME>[Name]</>의 임무 요청,[클랜 임무] [DungeonName],수락,거부,,,
+RaidTeamDelegate,<NICKNAME>[Name]</>의 공격대장 위임요청,위임을 수락하시겠습니까?,수락,거부,,,

@@ -1,0 +1,4 @@
+﻿RewardType,Name,Img,Desc
+19,클랜 경험치,IMG_Asset_GuildExp,"클랜 레벨을 상승시키는 경험치 입니다.
+획득 시 클랜에게 귀속됩니다."
+2,경험치,IMG_Asset_Exp,레벨을 상승시키는 경험치 입니다.

@@ -1,0 +1,8 @@
+﻿Type,Message,SubMessage,PositiveButtonName,NegativeButtonName,L10NOrder,L10NRegistrationDate,Untranslated
+Default,2025-05-21 Registered,2025-05-21 Registered,確認,取消,0521,2025-05-21 16:11:24,Message|SubMessage
+PartyInvited,<NICKNAME>[Name]</>的小隊邀請,要加入小隊嗎？,接受,拒絕,0521,2025-05-21 16:11:24,
+RaidTeamInvited,<NICKNAME>[Name]</>的攻擊隊邀請,要加入攻擊隊嗎？,接受,拒絕,0521,2025-05-21 16:11:24,
+RaidTeamReady,檢查攻擊隊準備狀態,戰鬥準備完成了嗎？,接受,拒絕,0521,2025-05-21 16:11:24,
+DungeonPartyInvited,<NICKNAME>[Name]</>的小隊邀請,[史詩副本][DungeonName],接受,拒絕,0521,2025-05-21 16:11:24,
+GuildDungeon,<NICKNAME>[Name]</>的任務請求,[家族任務] [DungeonName],接受,拒絕,0521,2025-11-07 12:00:23,
+RaidTeamDelegate,<NICKNAME>[Name]</>的攻擊隊長委任請求,要接受委任嗎？,接受,拒絕,0521,2025-12-15 12:50:35,

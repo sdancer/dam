@@ -1,0 +1,8 @@
+﻿GroupId,NpcInfoId,Order,Img,UseSkillId
+50010,701001,1000,IMG_Monster_Portrait_Duncan_01,"650006,650005,650008"
+50020,703100,1000,IMG_Monster_Portrait_AbyssLord_01,"1002061,1002161,1002162"
+50030,704302,1000,IMG_Monster_Portrait_RanakParasite_01,"660338, 660339, 660340"
+90000,91001,1000,IMG_Monster_Portrait_Clamovige,
+90000,91005,1004,IMG_Monster_Portrait_BlackLotusCatainBoss,
+90001,91015,1008,IMG_Monster_Portrait_ForgottenLord_01,
+90001,91016,1009,IMG_Monster_Portrait_BrandedOneBoss,
