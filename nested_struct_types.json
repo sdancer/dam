@@ -1,0 +1,2937 @@
+{
+  "metadata": {
+    "description": "Nested struct types identified from packet constructors and vtables",
+    "total_resolved": 98,
+    "total_failed": 60,
+    "unique_struct_types": 35
+  },
+  "packet_struct_fields": {
+    "PktLoginResult": {
+      "TimeZoneMinutes": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      },
+      "IsDemo": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      },
+      "PopUpMessage": {
+        "name": "PktPeriodServerData",
+        "vtable": "0x08d20440",
+        "serialize_va": "0x05e2ea38",
+        "fields": [
+          {
+            "offset": "0x10",
+            "type": "int64"
+          },
+          {
+            "offset": "0x18",
+            "type": "int64"
+          },
+          {
+            "offset": "0x20",
+            "type": "string"
+          },
+          {
+            "offset": "0x30",
+            "type": "int32"
+          },
+          {
+            "offset": "0x38",
+            "type": "int64"
+          },
+          {
+            "offset": "0x40",
+            "type": "int32"
+          },
+          {
+            "offset": "0x48",
+            "type": "struct"
+          },
+          {
+            "offset": "0x58",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktCharacterSelectResult": {
+      "TutorialData": {
+        "name": "PktCharacter",
+        "vtable": "0x08d1c720",
+        "serialize_va": "0x05e13394",
+        "fields": [
+          {
+            "offset": "0x9",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xa",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xb",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xd",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xf",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x10",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x11",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x18",
+            "type": "string"
+          },
+          {
+            "offset": "0x28",
+            "type": "uint8"
+          }
+        ]
+      },
+      "LastScenarioQuestInfoIdInAccount": {
+        "name": "PktTutorialData",
+        "vtable": "0x08d21848",
+        "serialize_va": "0x05e633bc",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "uint8"
+          }
+        ]
+      },
+      "GuildTinyInfo": {
+        "name": "PktGuildTinyInfo",
+        "vtable": "0x08d1ef40",
+        "serialize_va": "0x05e166a8",
+        "fields": [
+          {
+            "offset": "0x10",
+            "type": "string"
+          },
+          {
+            "offset": "0x20",
+            "type": "struct"
+          }
+        ]
+      },
+      "BanEndTime": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktCharacterDeleteResult": {
+      "DeleteTime": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktCharacterDieNotify": {
+      "ReviveInfoId": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x48",
+        "offset": "0x48",
+        "available_offsets": [
+          "0x58",
+          "0x80"
+        ]
+      },
+      "LastDiedTime": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      },
+      "KillerName": {
+        "name": "PktGuildTinyInfo",
+        "vtable": "0x08d1ef40",
+        "serialize_va": "0x05e166a8",
+        "fields": [
+          {
+            "offset": "0x10",
+            "type": "string"
+          },
+          {
+            "offset": "0x20",
+            "type": "struct"
+          }
+        ]
+      }
+    },
+    "PktBroadCastNotify": {
+      "ItemCountChange": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x60",
+        "offset": "0x60",
+        "available_offsets": [
+          "0x70",
+          "0x150"
+        ]
+      },
+      "Hash": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x140",
+        "offset": "0x140",
+        "available_offsets": [
+          "0x70",
+          "0x150"
+        ]
+      }
+    },
+    "PktConquestDataReadResult": {
+      "TaxPercent": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0x18",
+        "note": "TArray - analyzed in Phase 2"
+      },
+      "Round2BonusDiamondValue": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0x90",
+        "note": "TArray - analyzed in Phase 2"
+      },
+      "GuildDataList": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0xa0",
+        "note": "TArray - analyzed in Phase 2"
+      },
+      "Round1List": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0xb0",
+        "note": "TArray - analyzed in Phase 2"
+      },
+      "Round2List": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0xc0",
+        "note": "TArray - analyzed in Phase 2"
+      },
+      "Round1BossHpScoreDataList": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0xd0",
+        "note": "TArray - analyzed in Phase 2"
+      }
+    },
+    "PktAssetChangeNotify": {
+      "CharacterId": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x10",
+        "offset": "0x10",
+        "available_offsets": []
+      }
+    },
+    "PktWorldMoveFinishResult": {
+      "Dir": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x40",
+        "offset": "0x40",
+        "available_offsets": [
+          "0x70",
+          "0xd0"
+        ]
+      },
+      "Appearance": {
+        "name": "PktCharacterAppearance",
+        "vtable": "0x08d1c768",
+        "serialize_va": "0x05e137b8",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "int32"
+          },
+          {
+            "offset": "0x10",
+            "type": "int32"
+          }
+        ]
+      },
+      "StatList": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0xb0",
+        "note": "TArray - analyzed in Phase 2"
+      },
+      "EffectDataList": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0xc0",
+        "note": "TArray - analyzed in Phase 2"
+      },
+      "CurTime": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      },
+      "ActionList": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0xe0",
+        "note": "TArray - analyzed in Phase 2"
+      },
+      "DataLayerList": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0xf8",
+        "note": "TArray - analyzed in Phase 2"
+      }
+    },
+    "PktActorDestroyNotify": {
+      "KillerIsPlayer": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x20",
+        "offset": "0x20",
+        "available_offsets": []
+      }
+    },
+    "PktArtifactEnchantResult": {
+      "AssetItemChangeList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x18",
+        "offset": "0x18",
+        "available_offsets": [
+          "0x28",
+          "0x28"
+        ]
+      }
+    },
+    "PktAssetItemChangeNotify": {
+      "AssetItemChangeList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktAuctionGetPayResult": {
+      "AuctionIdList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktAuctionItemListReadResult": {
+      "MyAuctionIdList": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0x20",
+        "note": "TArray - analyzed in Phase 2"
+      }
+    },
+    "PktAuctionRegisterAgainResult": {
+      "AuctionItemList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktAuctionRegisterCancelResult": {
+      "AuctionIdList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktBonusPointRewardGetResult": {
+      "BonusPointRewardDataList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktCharacterBookEpisodeRewardGetResult": {
+      "AssetItemChangeList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x18",
+        "offset": "0x18",
+        "available_offsets": [
+          "0x40",
+          "0x40"
+        ]
+      }
+    },
+    "PktCharacterBookRewardGetResult": {
+      "AssetItemChangeList": {
+        "name": "PktCharacterBook",
+        "vtable": "0x08d1c7b0",
+        "serialize_va": "0x05e13a08",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xd",
+            "type": "uint8"
+          }
+        ]
+      }
+    },
+    "PktChatReportAndBanInfoReadResult": {
+      "BanEndTime": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x28",
+        "offset": "0x28",
+        "available_offsets": [
+          "0x38",
+          "0x28"
+        ]
+      }
+    },
+    "PktChatRoomExpelResult": {
+      "TargetCharacterName": {
+        "name": "PktChatRoom",
+        "vtable": "0x08d1cf90",
+        "serialize_va": "0x05e17a94",
+        "fields": [
+          {
+            "offset": "0x10",
+            "type": "struct"
+          },
+          {
+            "offset": "0x160",
+            "type": "string"
+          },
+          {
+            "offset": "0x170",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktChatRoomLeaveNotify": {
+      "Room": {
+        "name": "PktChatRoom",
+        "vtable": "0x08d1cf90",
+        "serialize_va": "0x05e17a94",
+        "fields": [
+          {
+            "offset": "0x10",
+            "type": "struct"
+          },
+          {
+            "offset": "0x160",
+            "type": "string"
+          },
+          {
+            "offset": "0x170",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktCollectionEquip": {
+      "EquipList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x20",
+        "offset": "0x20",
+        "available_offsets": []
+      }
+    },
+    "PktCollectionEquipResult": {
+      "ResultEquipList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x18",
+        "offset": "0x18",
+        "available_offsets": []
+      }
+    },
+    "PktCollectionUnlockGainTile": {
+      "Achievement": {
+        "name": "PktCollectionGainTile",
+        "vtable": "0x08d1d218",
+        "serialize_va": "0x05e180a8",
+        "fields": [
+          {
+            "offset": "0x10",
+            "type": "int32"
+          }
+        ]
+      }
+    },
+    "PktCombatItemUseResult": {
+      "UsedItemAndCountList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x20",
+        "offset": "0x20",
+        "available_offsets": []
+      }
+    },
+    "PktConquestOccupationChangeStateNotify": {
+      "ConditionIntParam": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x60",
+        "offset": "0x60",
+        "available_offsets": []
+      },
+      "ConditionStringParam": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0xd0",
+        "offset": "0xd0",
+        "available_offsets": []
+      }
+    },
+    "PktConquestOccupationDataNotify": {
+      "AltarDataList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x60",
+        "offset": "0x60",
+        "available_offsets": [
+          "0xd0",
+          "0xe0",
+          "0xf0"
+        ]
+      },
+      "GameEndTime": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      },
+      "NextDragonSpawnTime": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      },
+      "NextBaronSpawnTime": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktConquestRaidChangeStateNotify": {
+      "ConditionIntParam": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x60",
+        "offset": "0x60",
+        "available_offsets": []
+      }
+    },
+    "PktConquestRaidDataNotify": {
+      "DiedGateKeeperSpawnInfoIdList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x60",
+        "offset": "0x60",
+        "available_offsets": [
+          "0xe0",
+          "0x90",
+          "0x20"
+        ]
+      }
+    },
+    "PktConquestResultDataReadResult": {
+      "Round1List": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0x58",
+        "note": "TArray - analyzed in Phase 2"
+      }
+    },
+    "PktContentsChanceChargeResult": {
+      "AssetItemChangeList": {
+        "name": "PktContentsChanceData",
+        "vtable": "0x08d1d9b0",
+        "serialize_va": "0x05e1a77c",
+        "fields": [
+          {
+            "offset": "0x10",
+            "type": "string"
+          },
+          {
+            "offset": "0x20",
+            "type": "int32"
+          }
+        ]
+      }
+    },
+    "PktDungeonDataNotify": {
+      "EndTime": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktDungeonResultNotify": {
+      "BaseRewardList": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      },
+      "GuildRewardList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      },
+      "FailureReason": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktDungeonStateNotify": {
+      "ReservedMemberCount": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktEquipmentRefineOptionLoadResult": {
+      "AssetItemChangeList": {
+        "name": "PktItem",
+        "vtable": "0x08d1f2a0",
+        "serialize_va": "0x05e26d9c",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "int32"
+          },
+          {
+            "offset": "0x10",
+            "type": "int32"
+          }
+        ]
+      },
+      "UpdateOptionList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktEquipmentRefineOptionSaveResult": {
+      "AssetItemChangeList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x10",
+        "offset": "0x10",
+        "available_offsets": [
+          "0x18"
+        ]
+      }
+    },
+    "PktEquipmentRefineResult": {
+      "AssetItemChangeList": {
+        "name": "PktItem",
+        "vtable": "0x08d1f2a0",
+        "serialize_va": "0x05e26d9c",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "int32"
+          },
+          {
+            "offset": "0x10",
+            "type": "int32"
+          }
+        ]
+      },
+      "UpdateOptionList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktEventAttendanceRewardGetResult": {
+      "PaidEventAttendanceData": {
+        "name": "PktEventAttendanceData",
+        "vtable": "0x08d1e0a0",
+        "serialize_va": "0x05e1e6b0",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "int32"
+          },
+          {
+            "offset": "0x20",
+            "type": "int32"
+          },
+          {
+            "offset": "0x38",
+            "type": "int64"
+          },
+          {
+            "offset": "0x40",
+            "type": "int32"
+          }
+        ]
+      },
+      "AssetItemChangeList": {
+        "name": "PktPaidEventAttendanceData",
+        "vtable": "0x08d20248",
+        "serialize_va": "0x05e2d660",
+        "fields": [
+          {
+            "offset": "0x10",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x11",
+            "type": "uint8"
+          }
+        ]
+      }
+    },
+    "PktEventCheckBoardDrawResult": {
+      "RewardList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktEventHighLowDrawResult": {
+      "Data": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktEventHighLowPresentingNumberRequestResult": {
+      "Data": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktEventMissionAchievementRewardGetResult": {
+      "TotalLevelPoint": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x18",
+        "offset": "0x18",
+        "available_offsets": []
+      }
+    },
+    "PktEventRecoveryInfoReadResult": {
+      "EventCombinationRecoveryData": {
+        "name": "PktEventEnchantRecoveryData",
+        "vtable": "0x08d1e208",
+        "serialize_va": "0x05e1ef9c",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "int32"
+          },
+          {
+            "offset": "0x10",
+            "type": "int32"
+          },
+          {
+            "offset": "0x14",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x15",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x16",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x18",
+            "type": "int32"
+          },
+          {
+            "offset": "0x1c",
+            "type": "int32"
+          },
+          {
+            "offset": "0x20",
+            "type": "string"
+          },
+          {
+            "offset": "0x30",
+            "type": "string"
+          },
+          {
+            "offset": "0x40",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "PktEventSeasonPassBuyLevelResult": {
+      "AssetItemChangeList": {
+        "name": "PktEventSeasonPassData",
+        "vtable": "0x08d1e370",
+        "serialize_va": "0x05e20054",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int32"
+          }
+        ]
+      }
+    },
+    "PktEventSeasonPassRewardGetResult": {
+      "AssetItemChangeList": {
+        "name": "PktEventSeasonPassData",
+        "vtable": "0x08d1e370",
+        "serialize_va": "0x05e20054",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int32"
+          }
+        ]
+      }
+    },
+    "PktEventShareGachaRequestResult": {
+      "AssetItemChangeList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x20",
+        "offset": "0x20",
+        "available_offsets": []
+      }
+    },
+    "PktGuildAssetItemChangeNotify": {
+      "AssetItemChangeList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktGuildContentsChanceChangeNotify": {
+      "ChanceData": {
+        "name": "PktGuildEmblemInfo",
+        "vtable": "0x08d1eac0",
+        "serialize_va": "0x05e22f58",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktGuildCreate": {
+      "JoinType": {
+        "name": "PktGuildEmblemInfo",
+        "vtable": "0x08d1eac0",
+        "serialize_va": "0x05e22f58",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktGuildCreateResult": {
+      "AssetChangeList": {
+        "name": "PktGuildInfo",
+        "vtable": "0x08d1eb98",
+        "serialize_va": "0x05e23bc8",
+        "fields": [
+          {
+            "offset": "0x48",
+            "type": "string"
+          },
+          {
+            "offset": "0x58",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x60",
+            "type": "struct"
+          },
+          {
+            "offset": "0x70",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x78",
+            "type": "string"
+          },
+          {
+            "offset": "0x88",
+            "type": "struct"
+          }
+        ]
+      }
+    },
+    "PktGuildCryptRPEffectExpandResult": {
+      "AssetItemChangeList": {
+        "name": "PktGuildCrypt",
+        "vtable": "0x08d1e838",
+        "serialize_va": "0x05e2230c",
+        "fields": [
+          {
+            "offset": "0x90",
+            "type": "int32"
+          },
+          {
+            "offset": "0x94",
+            "type": "int32"
+          }
+        ]
+      }
+    },
+    "PktGuildDonationResult": {
+      "AssetItemChangeList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x10",
+        "offset": "0x10",
+        "available_offsets": []
+      },
+      "Level": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x20",
+        "offset": "0x20",
+        "available_offsets": []
+      }
+    },
+    "PktGuildDungeonDataNotify": {
+      "WaveLevel": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktGuildDungeonReadyCompleteNotify": {
+      "ReadyData": {
+        "name": "PktWorldMapPointData",
+        "vtable": "0x08d21cb8",
+        "serialize_va": "0x05e64b8c",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int32"
+          }
+        ]
+      }
+    },
+    "PktGuildDungeonResultNotify": {
+      "CurTotalDamage": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x28",
+        "offset": "0x28",
+        "available_offsets": [
+          "0x48",
+          "0x168"
+        ]
+      },
+      "BaseRewardGuildExp": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      },
+      "BonusRewardGuildExp": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktGuildInfoChange": {
+      "JoinMethod": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x30",
+        "offset": "0x30",
+        "available_offsets": []
+      }
+    },
+    "PktGuildInfoReadResult": {
+      "GuildMemberList": {
+        "name": "PktGuildInfo",
+        "vtable": "0x08d1eb98",
+        "serialize_va": "0x05e23bc8",
+        "fields": [
+          {
+            "offset": "0x48",
+            "type": "string"
+          },
+          {
+            "offset": "0x58",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x60",
+            "type": "struct"
+          },
+          {
+            "offset": "0x70",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x78",
+            "type": "string"
+          },
+          {
+            "offset": "0x88",
+            "type": "struct"
+          }
+        ]
+      }
+    },
+    "PktGuildJoinNotify": {
+      "GuildInfo": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x10",
+        "offset": "0x10",
+        "available_offsets": [
+          "0x118",
+          "0x118"
+        ]
+      }
+    },
+    "PktItemBlessingResult": {
+      "AssetItemChangeList": {
+        "name": "PktItem",
+        "vtable": "0x08d1f2a0",
+        "serialize_va": "0x05e26d9c",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "int32"
+          },
+          {
+            "offset": "0x10",
+            "type": "int32"
+          }
+        ]
+      }
+    },
+    "PktItemCraftResult": {
+      "ResultList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x18",
+        "offset": "0x18",
+        "available_offsets": []
+      }
+    },
+    "PktItemEnchant": {
+      "MaterialItemList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x10",
+        "offset": "0x10",
+        "available_offsets": []
+      }
+    },
+    "PktItemEnchantResult": {
+      "ItemEnchantResultDataList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktItemLevelUp": {
+      "MaterialItemList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x10",
+        "offset": "0x10",
+        "available_offsets": []
+      }
+    },
+    "PktItemLevelUpResult": {
+      "ItemChangeList": {
+        "name": "PktItem",
+        "vtable": "0x08d1f2a0",
+        "serialize_va": "0x05e26d9c",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "int32"
+          },
+          {
+            "offset": "0x10",
+            "type": "int32"
+          }
+        ]
+      }
+    },
+    "PktItemLootNotify": {
+      "ItemLootDataList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktItemOptionChangeFixResult": {
+      "SlotId": {
+        "name": "PktItem",
+        "vtable": "0x08d1f2a0",
+        "serialize_va": "0x05e26d9c",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "int32"
+          },
+          {
+            "offset": "0x10",
+            "type": "int32"
+          }
+        ]
+      }
+    },
+    "PktItemOptionOpenResult": {
+      "SlotId": {
+        "name": "PktItem",
+        "vtable": "0x08d1f2a0",
+        "serialize_va": "0x05e26d9c",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "int32"
+          },
+          {
+            "offset": "0x10",
+            "type": "int32"
+          }
+        ]
+      }
+    },
+    "PktItemRedrawRandomResult": {
+      "RedrawItem": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktItemRedrawResult": {
+      "RedrawItem": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktMailDeleteResult": {
+      "MailCountList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x10",
+        "offset": "0x10",
+        "available_offsets": []
+      }
+    },
+    "PktMailListRead": {
+      "ClientParam": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x38",
+        "offset": "0x38",
+        "available_offsets": [
+          "0x10"
+        ]
+      }
+    },
+    "PktMailListReadResult": {
+      "MailCountList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x38",
+        "offset": "0x38",
+        "available_offsets": []
+      }
+    },
+    "PktMailRewardAllGetResult": {
+      "AssetItemChangeList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x28",
+        "offset": "0x28",
+        "available_offsets": []
+      }
+    },
+    "PktMailRewardGetResult": {
+      "MailCountList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x40",
+        "offset": "0x40",
+        "available_offsets": []
+      }
+    },
+    "PktMatchStatusReadResult": {
+      "MainRewardList": {
+        "name": "PktMatchGroup",
+        "vtable": "0x08d1fdc8",
+        "serialize_va": "0x05e2bbc8",
+        "fields": [
+          {
+            "offset": "0x10",
+            "type": "int32"
+          },
+          {
+            "offset": "0x14",
+            "type": "int32"
+          },
+          {
+            "offset": "0x18",
+            "type": "string"
+          },
+          {
+            "offset": "0x28",
+            "type": "int32"
+          },
+          {
+            "offset": "0x2c",
+            "type": "int32"
+          },
+          {
+            "offset": "0x30",
+            "type": "int64"
+          },
+          {
+            "offset": "0x38",
+            "type": "uint8"
+          }
+        ]
+      }
+    },
+    "PktNpcCreateNotify": {
+      "WorldMove": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x18",
+        "offset": "0x18",
+        "available_offsets": [
+          "0x8"
+        ]
+      }
+    },
+    "PktNpcDirectionUpdateNotify": {
+      "NpcId": {
+        "name": "PktYaw",
+        "vtable": "0x08d21d00",
+        "serialize_va": "0x05d707f8",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "uint8"
+          }
+        ]
+      }
+    },
+    "PktOperationProbabilityInfoReadResult": {
+      "Slot3ProbabilityInfoList": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0x48",
+        "note": "TArray - analyzed in Phase 2"
+      },
+      "Slot4ProbabilityInfoList": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0x58",
+        "note": "TArray - analyzed in Phase 2"
+      }
+    },
+    "PktPartyCreate": {
+      "DungeonInfoId": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x28",
+        "offset": "0x28",
+        "available_offsets": []
+      }
+    },
+    "PktPartyDungeonReadyStateNotify": {
+      "CheckList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x18",
+        "offset": "0x18",
+        "available_offsets": []
+      }
+    },
+    "PktPartyDungeonResultNotify": {
+      "FirstClearRewardList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      },
+      "CountDownTime": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      },
+      "AddAssetItemChangeList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktPartyInviteRefuseNotify": {
+      "TimeOut": {
+        "name": "PktPartyMemberSimple",
+        "vtable": "0x08d202d8",
+        "serialize_va": "0x05e2dd2c",
+        "fields": [
+          {
+            "offset": "0x9",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xa",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x10",
+            "type": "string"
+          },
+          {
+            "offset": "0x20",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x21",
+            "type": "uint8"
+          }
+        ]
+      }
+    },
+    "PktPartyInviteResult": {
+      "InvitationExpirationTime": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x20",
+        "offset": "0x20",
+        "available_offsets": []
+      }
+    },
+    "PktPartyJoinAcceptNotify": {
+      "Party": {
+        "name": "PktPartySimple",
+        "vtable": "0x08d20368",
+        "serialize_va": "0x05e1ad10",
+        "fields": [
+          {
+            "offset": "0xc0",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xc8",
+            "type": "struct"
+          }
+        ]
+      }
+    },
+    "PktPartyJoinRefuseNotify": {
+      "RefusedParty": {
+        "name": "PktPartySimple",
+        "vtable": "0x08d20368",
+        "serialize_va": "0x05e1ad10",
+        "fields": [
+          {
+            "offset": "0xc0",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xc8",
+            "type": "struct"
+          }
+        ]
+      }
+    },
+    "PktPartyJoinRequestNotify": {
+      "Achievement": {
+        "name": "PktPartySimple",
+        "vtable": "0x08d20368",
+        "serialize_va": "0x05e1ad10",
+        "fields": [
+          {
+            "offset": "0xc0",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xc8",
+            "type": "struct"
+          }
+        ]
+      }
+    },
+    "PktPartyJoinRequestResult": {
+      "JoinRequestExpirationTime": {
+        "name": "PktPartySimple",
+        "vtable": "0x08d20368",
+        "serialize_va": "0x05e1ad10",
+        "fields": [
+          {
+            "offset": "0xc0",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xc8",
+            "type": "struct"
+          }
+        ]
+      }
+    },
+    "PktPortraitMaterialRegisterResult": {
+      "AssetItemChangeList": {
+        "name": "PktPortraitGroupData",
+        "vtable": "0x08d20518",
+        "serialize_va": "0x05e2eca4",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          }
+        ]
+      },
+      "ChangedStatList": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktPreviousRankingListReadResult": {
+      "LastRanking": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x18",
+        "offset": "0x18",
+        "available_offsets": []
+      }
+    },
+    "PktPvpLocationSearchResult": {
+      "LocationSearchData": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      },
+      "PvpRecord": {
+        "name": "PktPvpLocationSearchData",
+        "vtable": "0x08d206c8",
+        "serialize_va": "0x05e2f9f4",
+        "fields": [
+          {
+            "offset": "0x9",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xa",
+            "type": "uint8"
+          }
+        ]
+      }
+    },
+    "PktPvpRevengeResult": {
+      "PvpRecord": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktPvpTauntResult": {
+      "PvpRecord": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    },
+    "PktQuestActCompletedNotify": {
+      "QuestAct": {
+        "name": "PktQuestAct",
+        "vtable": "0x08d20908",
+        "serialize_va": "0x05e30c8c",
+        "fields": [
+          {
+            "offset": "0x50",
+            "type": "struct"
+          },
+          {
+            "offset": "0x70",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x78",
+            "type": "struct"
+          },
+          {
+            "offset": "0x198",
+            "type": "struct"
+          },
+          {
+            "offset": "0x1a8",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x1ac",
+            "type": "int32"
+          },
+          {
+            "offset": "0x1b0",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x1b8",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktQuestActInstantCompleteResult": {
+      "QuestData": {
+        "name": "PktQuestAct",
+        "vtable": "0x08d20908",
+        "serialize_va": "0x05e30c8c",
+        "fields": [
+          {
+            "offset": "0x50",
+            "type": "struct"
+          },
+          {
+            "offset": "0x70",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x78",
+            "type": "struct"
+          },
+          {
+            "offset": "0x198",
+            "type": "struct"
+          },
+          {
+            "offset": "0x1a8",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x1ac",
+            "type": "int32"
+          },
+          {
+            "offset": "0x1b0",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x1b8",
+            "type": "int64"
+          }
+        ]
+      },
+      "AssetItemChangeList": {
+        "name": "PktQuestData",
+        "vtable": "0x08d20998",
+        "serialize_va": "0x05e310c0",
+        "fields": [
+          {
+            "offset": "0x10",
+            "type": "int64"
+          },
+          {
+            "offset": "0x18",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktQuestAllCompleteResult": {
+      "AssetItemChangeList": {
+        "name": "PktQuestData",
+        "vtable": "0x08d20998",
+        "serialize_va": "0x05e310c0",
+        "fields": [
+          {
+            "offset": "0x10",
+            "type": "int64"
+          },
+          {
+            "offset": "0x18",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktQuestAutoStartResult": {
+      "RewardByMail": {
+        "name": "PktQuestData",
+        "vtable": "0x08d20998",
+        "serialize_va": "0x05e310c0",
+        "fields": [
+          {
+            "offset": "0x10",
+            "type": "int64"
+          },
+          {
+            "offset": "0x18",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktQuestStartNotify": {
+      "QuestData": {
+        "name": "PktQuest",
+        "vtable": "0x08d208c0",
+        "serialize_va": "0x05e26efc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          }
+        ]
+      }
+    },
+    "PktRankingListReadResult": {
+      "LastRanking": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x18",
+        "offset": "0x18",
+        "available_offsets": []
+      }
+    },
+    "PktRegisteredDungeonPartyListReadResult": {
+      "AchievementInfoId": {
+        "name": "PktDungeonPartySimpleSearched",
+        "vtable": "0x08d1dad0",
+        "serialize_va": "0x05e1ae40",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "int32"
+          },
+          {
+            "offset": "0x10",
+            "type": "int32"
+          },
+          {
+            "offset": "0x14",
+            "type": "uint8"
+          }
+        ]
+      }
+    },
+    "PktServerTransferListReadResult": {
+      "ServerTransferPersonalCoolTime": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      },
+      "ServerTransferGuildCoolTime": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      },
+      "ServerTransferGuildReadyCoolTime": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      },
+      "ServerTransferGuildReserveExpireTime": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktServerTransferRequestResult": {
+      "ServerTransferGuildReadyCoolTime": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x28",
+        "offset": "0x28",
+        "available_offsets": [
+          "0x38",
+          "0x28"
+        ]
+      }
+    },
+    "PktShopItemPurchaseResult": {
+      "RewardList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x28",
+        "offset": "0x28",
+        "available_offsets": []
+      }
+    },
+    "PktSightEnterNotify": {
+      "CharacterList": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x50",
+        "offset": "0x50",
+        "available_offsets": []
+      }
+    },
+    "PktSkillCastingStartNotify": {
+      "TargetActorId": {
+        "name": "PktYaw",
+        "vtable": "0x08d21d00",
+        "serialize_va": "0x05d707f8",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "uint8"
+          }
+        ]
+      }
+    },
+    "PktSkillHitNotify": {
+      "SkillHitData": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x20",
+        "offset": "0x20",
+        "available_offsets": []
+      }
+    },
+    "PktSkillStartNotify": {
+      "TargetPosY": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0x28",
+        "note": "TArray - analyzed in Phase 2"
+      }
+    },
+    "PktSkillStartResult": {
+      "CoolTime": {
+        "name": "???",
+        "type": "TArray<struct>",
+        "offset": "0x28",
+        "note": "TArray - analyzed in Phase 2"
+      }
+    },
+    "PktSummonCallRequest": {
+      "RequestCharacter": {
+        "name": "PktCharacterSimple",
+        "vtable": "0x08d1cb58",
+        "serialize_va": "0x05e15f14",
+        "fields": [
+          {
+            "offset": "0x10",
+            "type": "int64"
+          },
+          {
+            "offset": "0x18",
+            "type": "string"
+          },
+          {
+            "offset": "0x28",
+            "type": "int32"
+          },
+          {
+            "offset": "0x2c",
+            "type": "int32"
+          },
+          {
+            "offset": "0x30",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x38",
+            "type": "struct"
+          },
+          {
+            "offset": "0x78",
+            "type": "struct"
+          },
+          {
+            "offset": "0x88",
+            "type": "struct"
+          }
+        ]
+      }
+    },
+    "PktSystemMessageShowNotify": {
+      "EndTime": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktTeleportArriveNotify": {
+      "TeleportArriveType": {
+        "name": "PktCharacterOther",
+        "vtable": "0x08d1ca38",
+        "serialize_va": "0x05e15014",
+        "fields": [
+          {
+            "offset": "0x10",
+            "type": "int32"
+          }
+        ]
+      }
+    },
+    "PktTutorialSkipResult": {
+      "Complete": {
+        "name": "PktTutorial",
+        "vtable": "0x08d21800",
+        "serialize_va": "0x05e37714",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int32"
+          }
+        ]
+      }
+    },
+    "PktTutorialUpdateNotify": {
+      "Achievement": {
+        "name": "???",
+        "error": "constructor sub-call not found at offset 0x10",
+        "offset": "0x10",
+        "available_offsets": []
+      }
+    },
+    "PktTutorialUpdateResult": {
+      "Instant": {
+        "name": "PktTutorial",
+        "vtable": "0x08d21800",
+        "serialize_va": "0x05e37714",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int32"
+          }
+        ]
+      }
+    },
+    "PktWandererTradeItemTrade": {
+      "MaterialItemList": {
+        "name": "PktWandererTradeItem",
+        "vtable": "0x08d21b98",
+        "serialize_va": "0x05e64748",
+        "fields": [
+          {
+            "offset": "0xa",
+            "type": "uint16"
+          },
+          {
+            "offset": "0xc",
+            "type": "uint16"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x10",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktWandererTradeItemTradeResult": {
+      "AssetItemChangeList": {
+        "name": "PktWandererTradeItem",
+        "vtable": "0x08d21b98",
+        "serialize_va": "0x05e64748",
+        "fields": [
+          {
+            "offset": "0xa",
+            "type": "uint16"
+          },
+          {
+            "offset": "0xc",
+            "type": "uint16"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint8"
+          },
+          {
+            "offset": "0x10",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktWorldExitReserveResult": {
+      "AssetItemChangeList": {
+        "name": "PktTimeBase",
+        "vtable": "0x08d02a38",
+        "serialize_va": "0x05d78404",
+        "fields": [
+          {
+            "offset": "0x8",
+            "type": "int64"
+          }
+        ]
+      }
+    },
+    "PktWorldMoveReserveResult": {
+      "AssetItemChangeList": {
+        "name": "PktWorldInfo",
+        "vtable": "0x08d21c28",
+        "serialize_va": "0x05e26efc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          }
+        ]
+      },
+      "Pos": {
+        "name": "PktAssetItemChangeList",
+        "vtable": "0x08d1c258",
+        "serialize_va": "0x05e107fc",
+        "fields": [
+          {
+            "offset": "0xc",
+            "type": "uint8"
+          },
+          {
+            "offset": "0xe",
+            "type": "uint16"
+          }
+        ]
+      }
+    }
+  },
+  "unique_struct_types": {
+    "0x08d02a38": {
+      "name": "PktTimeBase",
+      "vtable": "0x08d02a38",
+      "serialize_va": "0x05d78404",
+      "fields": [
+        {
+          "offset": "0x8",
+          "type": "int64"
+        }
+      ]
+    },
+    "0x08d20440": {
+      "name": "PktPeriodServerData",
+      "vtable": "0x08d20440",
+      "serialize_va": "0x05e2ea38",
+      "fields": [
+        {
+          "offset": "0x10",
+          "type": "int64"
+        },
+        {
+          "offset": "0x18",
+          "type": "int64"
+        },
+        {
+          "offset": "0x20",
+          "type": "string"
+        },
+        {
+          "offset": "0x30",
+          "type": "int32"
+        },
+        {
+          "offset": "0x38",
+          "type": "int64"
+        },
+        {
+          "offset": "0x40",
+          "type": "int32"
+        },
+        {
+          "offset": "0x48",
+          "type": "struct"
+        },
+        {
+          "offset": "0x58",
+          "type": "uint16"
+        }
+      ]
+    },
+    "0x08d1c720": {
+      "name": "PktCharacter",
+      "vtable": "0x08d1c720",
+      "serialize_va": "0x05e13394",
+      "fields": [
+        {
+          "offset": "0x9",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xa",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xb",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xc",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xd",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xe",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xf",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x10",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x11",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x18",
+          "type": "string"
+        },
+        {
+          "offset": "0x28",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d21848": {
+      "name": "PktTutorialData",
+      "vtable": "0x08d21848",
+      "serialize_va": "0x05e633bc",
+      "fields": [
+        {
+          "offset": "0x8",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d1ef40": {
+      "name": "PktGuildTinyInfo",
+      "vtable": "0x08d1ef40",
+      "serialize_va": "0x05e166a8",
+      "fields": [
+        {
+          "offset": "0x10",
+          "type": "string"
+        },
+        {
+          "offset": "0x20",
+          "type": "struct"
+        }
+      ]
+    },
+    "0x08d1c768": {
+      "name": "PktCharacterAppearance",
+      "vtable": "0x08d1c768",
+      "serialize_va": "0x05e137b8",
+      "fields": [
+        {
+          "offset": "0xc",
+          "type": "int32"
+        },
+        {
+          "offset": "0x10",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d1c258": {
+      "name": "PktAssetItemChangeList",
+      "vtable": "0x08d1c258",
+      "serialize_va": "0x05e107fc",
+      "fields": [
+        {
+          "offset": "0xc",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xe",
+          "type": "uint16"
+        }
+      ]
+    },
+    "0x08d1c7b0": {
+      "name": "PktCharacterBook",
+      "vtable": "0x08d1c7b0",
+      "serialize_va": "0x05e13a08",
+      "fields": [
+        {
+          "offset": "0xc",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xd",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d1cf90": {
+      "name": "PktChatRoom",
+      "vtable": "0x08d1cf90",
+      "serialize_va": "0x05e17a94",
+      "fields": [
+        {
+          "offset": "0x10",
+          "type": "struct"
+        },
+        {
+          "offset": "0x160",
+          "type": "string"
+        },
+        {
+          "offset": "0x170",
+          "type": "int64"
+        }
+      ]
+    },
+    "0x08d1d218": {
+      "name": "PktCollectionGainTile",
+      "vtable": "0x08d1d218",
+      "serialize_va": "0x05e180a8",
+      "fields": [
+        {
+          "offset": "0x10",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d1d9b0": {
+      "name": "PktContentsChanceData",
+      "vtable": "0x08d1d9b0",
+      "serialize_va": "0x05e1a77c",
+      "fields": [
+        {
+          "offset": "0x10",
+          "type": "string"
+        },
+        {
+          "offset": "0x20",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d1f2a0": {
+      "name": "PktItem",
+      "vtable": "0x08d1f2a0",
+      "serialize_va": "0x05e26d9c",
+      "fields": [
+        {
+          "offset": "0xc",
+          "type": "int32"
+        },
+        {
+          "offset": "0x10",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d1e0a0": {
+      "name": "PktEventAttendanceData",
+      "vtable": "0x08d1e0a0",
+      "serialize_va": "0x05e1e6b0",
+      "fields": [
+        {
+          "offset": "0xc",
+          "type": "int32"
+        },
+        {
+          "offset": "0x20",
+          "type": "int32"
+        },
+        {
+          "offset": "0x38",
+          "type": "int64"
+        },
+        {
+          "offset": "0x40",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d20248": {
+      "name": "PktPaidEventAttendanceData",
+      "vtable": "0x08d20248",
+      "serialize_va": "0x05e2d660",
+      "fields": [
+        {
+          "offset": "0x10",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x11",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d1e208": {
+      "name": "PktEventEnchantRecoveryData",
+      "vtable": "0x08d1e208",
+      "serialize_va": "0x05e1ef9c",
+      "fields": [
+        {
+          "offset": "0xc",
+          "type": "int32"
+        },
+        {
+          "offset": "0x10",
+          "type": "int32"
+        },
+        {
+          "offset": "0x14",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x15",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x16",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x18",
+          "type": "int32"
+        },
+        {
+          "offset": "0x1c",
+          "type": "int32"
+        },
+        {
+          "offset": "0x20",
+          "type": "string"
+        },
+        {
+          "offset": "0x30",
+          "type": "string"
+        },
+        {
+          "offset": "0x40",
+          "type": "string"
+        }
+      ]
+    },
+    "0x08d1e370": {
+      "name": "PktEventSeasonPassData",
+      "vtable": "0x08d1e370",
+      "serialize_va": "0x05e20054",
+      "fields": [
+        {
+          "offset": "0x8",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d1eac0": {
+      "name": "PktGuildEmblemInfo",
+      "vtable": "0x08d1eac0",
+      "serialize_va": "0x05e22f58",
+      "fields": [
+        {
+          "offset": "0x8",
+          "type": "uint16"
+        }
+      ]
+    },
+    "0x08d1eb98": {
+      "name": "PktGuildInfo",
+      "vtable": "0x08d1eb98",
+      "serialize_va": "0x05e23bc8",
+      "fields": [
+        {
+          "offset": "0x48",
+          "type": "string"
+        },
+        {
+          "offset": "0x58",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x60",
+          "type": "struct"
+        },
+        {
+          "offset": "0x70",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x78",
+          "type": "string"
+        },
+        {
+          "offset": "0x88",
+          "type": "struct"
+        }
+      ]
+    },
+    "0x08d1e838": {
+      "name": "PktGuildCrypt",
+      "vtable": "0x08d1e838",
+      "serialize_va": "0x05e2230c",
+      "fields": [
+        {
+          "offset": "0x90",
+          "type": "int32"
+        },
+        {
+          "offset": "0x94",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d21cb8": {
+      "name": "PktWorldMapPointData",
+      "vtable": "0x08d21cb8",
+      "serialize_va": "0x05e64b8c",
+      "fields": [
+        {
+          "offset": "0x8",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d1fdc8": {
+      "name": "PktMatchGroup",
+      "vtable": "0x08d1fdc8",
+      "serialize_va": "0x05e2bbc8",
+      "fields": [
+        {
+          "offset": "0x10",
+          "type": "int32"
+        },
+        {
+          "offset": "0x14",
+          "type": "int32"
+        },
+        {
+          "offset": "0x18",
+          "type": "string"
+        },
+        {
+          "offset": "0x28",
+          "type": "int32"
+        },
+        {
+          "offset": "0x2c",
+          "type": "int32"
+        },
+        {
+          "offset": "0x30",
+          "type": "int64"
+        },
+        {
+          "offset": "0x38",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d21d00": {
+      "name": "PktYaw",
+      "vtable": "0x08d21d00",
+      "serialize_va": "0x05d707f8",
+      "fields": [
+        {
+          "offset": "0x8",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d202d8": {
+      "name": "PktPartyMemberSimple",
+      "vtable": "0x08d202d8",
+      "serialize_va": "0x05e2dd2c",
+      "fields": [
+        {
+          "offset": "0x9",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xa",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x10",
+          "type": "string"
+        },
+        {
+          "offset": "0x20",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x21",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d20368": {
+      "name": "PktPartySimple",
+      "vtable": "0x08d20368",
+      "serialize_va": "0x05e1ad10",
+      "fields": [
+        {
+          "offset": "0xc0",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xc8",
+          "type": "struct"
+        }
+      ]
+    },
+    "0x08d20518": {
+      "name": "PktPortraitGroupData",
+      "vtable": "0x08d20518",
+      "serialize_va": "0x05e2eca4",
+      "fields": [
+        {
+          "offset": "0xc",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d206c8": {
+      "name": "PktPvpLocationSearchData",
+      "vtable": "0x08d206c8",
+      "serialize_va": "0x05e2f9f4",
+      "fields": [
+        {
+          "offset": "0x9",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xa",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d20908": {
+      "name": "PktQuestAct",
+      "vtable": "0x08d20908",
+      "serialize_va": "0x05e30c8c",
+      "fields": [
+        {
+          "offset": "0x50",
+          "type": "struct"
+        },
+        {
+          "offset": "0x70",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x78",
+          "type": "struct"
+        },
+        {
+          "offset": "0x198",
+          "type": "struct"
+        },
+        {
+          "offset": "0x1a8",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x1ac",
+          "type": "int32"
+        },
+        {
+          "offset": "0x1b0",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x1b8",
+          "type": "int64"
+        }
+      ]
+    },
+    "0x08d20998": {
+      "name": "PktQuestData",
+      "vtable": "0x08d20998",
+      "serialize_va": "0x05e310c0",
+      "fields": [
+        {
+          "offset": "0x10",
+          "type": "int64"
+        },
+        {
+          "offset": "0x18",
+          "type": "int64"
+        }
+      ]
+    },
+    "0x08d208c0": {
+      "name": "PktQuest",
+      "vtable": "0x08d208c0",
+      "serialize_va": "0x05e26efc",
+      "fields": [
+        {
+          "offset": "0xc",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d1dad0": {
+      "name": "PktDungeonPartySimpleSearched",
+      "vtable": "0x08d1dad0",
+      "serialize_va": "0x05e1ae40",
+      "fields": [
+        {
+          "offset": "0xc",
+          "type": "int32"
+        },
+        {
+          "offset": "0x10",
+          "type": "int32"
+        },
+        {
+          "offset": "0x14",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d1cb58": {
+      "name": "PktCharacterSimple",
+      "vtable": "0x08d1cb58",
+      "serialize_va": "0x05e15f14",
+      "fields": [
+        {
+          "offset": "0x10",
+          "type": "int64"
+        },
+        {
+          "offset": "0x18",
+          "type": "string"
+        },
+        {
+          "offset": "0x28",
+          "type": "int32"
+        },
+        {
+          "offset": "0x2c",
+          "type": "int32"
+        },
+        {
+          "offset": "0x30",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x38",
+          "type": "struct"
+        },
+        {
+          "offset": "0x78",
+          "type": "struct"
+        },
+        {
+          "offset": "0x88",
+          "type": "struct"
+        }
+      ]
+    },
+    "0x08d1ca38": {
+      "name": "PktCharacterOther",
+      "vtable": "0x08d1ca38",
+      "serialize_va": "0x05e15014",
+      "fields": [
+        {
+          "offset": "0x10",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d21800": {
+      "name": "PktTutorial",
+      "vtable": "0x08d21800",
+      "serialize_va": "0x05e37714",
+      "fields": [
+        {
+          "offset": "0x8",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d21b98": {
+      "name": "PktWandererTradeItem",
+      "vtable": "0x08d21b98",
+      "serialize_va": "0x05e64748",
+      "fields": [
+        {
+          "offset": "0xa",
+          "type": "uint16"
+        },
+        {
+          "offset": "0xc",
+          "type": "uint16"
+        },
+        {
+          "offset": "0xe",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x10",
+          "type": "int64"
+        }
+      ]
+    },
+    "0x08d21c28": {
+      "name": "PktWorldInfo",
+      "vtable": "0x08d21c28",
+      "serialize_va": "0x05e26efc",
+      "fields": [
+        {
+          "offset": "0xc",
+          "type": "uint8"
+        }
+      ]
+    }
+  }
+}

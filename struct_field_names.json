@@ -1,0 +1,1457 @@
+{
+  "metadata": {
+    "description": "Nested struct type analysis - field names and serialize patterns",
+    "finding": "Nested structs do NOT have BuildFieldNameArray. Fields are unnamed and serialized positionally.",
+    "vtable_layout": {
+      "sub_vtable_size": 9,
+      "slot_0": "destructor",
+      "slot_1": "init/copy",
+      "slot_2": "something",
+      "slot_3": "stub (returns 0)",
+      "slot_4": "serialize",
+      "slot_5": "stub (returns 0)",
+      "slot_6": "getName (thunk -> FName::Init)",
+      "slot_7": "NULL",
+      "slot_8": "NULL"
+    },
+    "serializer_vtable_offsets": {
+      "40": "uint8",
+      "48": "byte",
+      "56": "bool/enum",
+      "64": "int32",
+      "72": "uint32",
+      "80": "int16",
+      "88": "uint16",
+      "96": "int64",
+      "168": "bool"
+    },
+    "total_structs": 35,
+    "structs_with_field_names": 0
+  },
+  "structs": {
+    "0x08d02a38": {
+      "name": "PktTimeBase",
+      "verified_name": "PktTimeBase",
+      "vtable": "0x08d02a38",
+      "getName_va": "0x05d78394",
+      "serialize_va": "0x05e374c8",
+      "sub_vtable_count": 1,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0x8",
+          "type": "int64"
+        }
+      ]
+    },
+    "0x08d1c258": {
+      "name": "PktAssetItemChangeList",
+      "verified_name": "PktAssetItemChangeList",
+      "vtable": "0x08d1c258",
+      "getName_va": "0x05e1b2c0",
+      "serialize_va": "0x05e1058c",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0xc",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xe",
+          "type": "uint16"
+        }
+      ]
+    },
+    "0x08d1c720": {
+      "name": "PktCharacter",
+      "verified_name": "PktCharacter",
+      "vtable": "0x08d1c720",
+      "getName_va": "0x05e1b3e0",
+      "serialize_va": "0x05e12b04",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0x10",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x10",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x20",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x30",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x38",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x1d8",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        },
+        {
+          "offset": "0x1e8",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        },
+        {
+          "offset": "0x1f8",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x208",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x210",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x230",
+          "type": "unknown_vtable_0x88",
+          "serializer_vtable_offset": "0x88"
+        },
+        {
+          "offset": "0x238",
+          "type": "byte",
+          "serializer_vtable_offset": "0x30"
+        },
+        {
+          "offset": "0x250",
+          "type": "bool/enum",
+          "serializer_vtable_offset": "0x38"
+        },
+        {
+          "offset": "0x268",
+          "type": "unknown_vtable_0x90",
+          "serializer_vtable_offset": "0x90"
+        },
+        {
+          "offset": "0x270",
+          "type": "unknown_vtable_0x90",
+          "serializer_vtable_offset": "0x90"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0x9",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xa",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xb",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xc",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xd",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xe",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xf",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x10",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x11",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x18",
+          "type": "string"
+        },
+        {
+          "offset": "0x28",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d1c768": {
+      "name": "PktCharacterAppearance",
+      "verified_name": "PktCharacterAppearance",
+      "vtable": "0x08d1c768",
+      "getName_va": "0x05e1b3a0",
+      "serialize_va": "0x05e134e4",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0x9",
+          "type": "byte",
+          "serializer_vtable_offset": "0x30"
+        },
+        {
+          "offset": "0xa",
+          "type": "byte",
+          "serializer_vtable_offset": "0x30"
+        },
+        {
+          "offset": "0xa",
+          "type": "byte",
+          "serializer_vtable_offset": "0x30"
+        },
+        {
+          "offset": "0xb",
+          "type": "byte",
+          "serializer_vtable_offset": "0x30"
+        },
+        {
+          "offset": "0xc",
+          "type": "byte",
+          "serializer_vtable_offset": "0x30"
+        },
+        {
+          "offset": "0xd",
+          "type": "byte",
+          "serializer_vtable_offset": "0x30"
+        },
+        {
+          "offset": "0xe",
+          "type": "byte",
+          "serializer_vtable_offset": "0x30"
+        },
+        {
+          "offset": "0xf",
+          "type": "byte",
+          "serializer_vtable_offset": "0x30"
+        },
+        {
+          "offset": "0x10",
+          "type": "byte",
+          "serializer_vtable_offset": "0x30"
+        },
+        {
+          "offset": "0x18",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0xc",
+          "type": "int32"
+        },
+        {
+          "offset": "0x10",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d1c7b0": {
+      "name": "PktCharacterBook",
+      "verified_name": "PktCharacterBook",
+      "vtable": "0x08d1c7b0",
+      "getName_va": "0x05e1b430",
+      "serialize_va": "0x05e138b8",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0xc",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0xc",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0xc",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xd",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d1ca38": {
+      "name": "PktCharacterOther",
+      "verified_name": "PktCharacterOther",
+      "vtable": "0x08d1ca38",
+      "getName_va": "0x05e1b4a0",
+      "serialize_va": "0x05e14cd4",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0x20",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0x10",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d1cb58": {
+      "name": "PktCharacterSimple",
+      "verified_name": "PktCharacterSimple",
+      "vtable": "0x08d1cb58",
+      "getName_va": "0x05e1b4e0",
+      "serialize_va": "0x05e15bf0",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0x10",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x18",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        },
+        {
+          "offset": "0x28",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        },
+        {
+          "offset": "0x2c",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x30",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x38",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x48",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x88",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x90",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0xa0",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        },
+        {
+          "offset": "0xb0",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0x10",
+          "type": "int64"
+        },
+        {
+          "offset": "0x18",
+          "type": "string"
+        },
+        {
+          "offset": "0x28",
+          "type": "int32"
+        },
+        {
+          "offset": "0x2c",
+          "type": "int32"
+        },
+        {
+          "offset": "0x30",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x38",
+          "type": "struct"
+        },
+        {
+          "offset": "0x78",
+          "type": "struct"
+        },
+        {
+          "offset": "0x88",
+          "type": "struct"
+        }
+      ]
+    },
+    "0x08d1cf90": {
+      "name": "PktChatRoom",
+      "verified_name": "PktChatRoom",
+      "vtable": "0x08d1cf90",
+      "getName_va": "0x05e1b5e0",
+      "serialize_va": "0x05e17758",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0x10",
+          "type": "bool/enum",
+          "serializer_vtable_offset": "0x38"
+        },
+        {
+          "offset": "0x60",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0x10",
+          "type": "struct"
+        },
+        {
+          "offset": "0x160",
+          "type": "string"
+        },
+        {
+          "offset": "0x170",
+          "type": "int64"
+        }
+      ]
+    },
+    "0x08d1d218": {
+      "name": "PktCollectionGainTile",
+      "verified_name": "PktCollectionGainTile",
+      "vtable": "0x08d1d218",
+      "getName_va": "0x05e1b650",
+      "serialize_va": "0x05e18434",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0xc",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0x10",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d1d9b0": {
+      "name": "PktContentsChanceData",
+      "verified_name": "PktContentsChanceData",
+      "vtable": "0x08d1d9b0",
+      "getName_va": "0x05e1b7f0",
+      "serialize_va": "0x05e1a670",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0xc",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0xc",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0x10",
+          "type": "string"
+        },
+        {
+          "offset": "0x20",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d1dad0": {
+      "name": "PktDungeonPartySimpleSearched",
+      "verified_name": "PktDungeonPartySimpleSearched",
+      "vtable": "0x08d1dad0",
+      "getName_va": "0x05e1b820",
+      "serialize_va": "0x05e1ad70",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0xc0",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0xc",
+          "type": "int32"
+        },
+        {
+          "offset": "0x10",
+          "type": "int32"
+        },
+        {
+          "offset": "0x14",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d1e0a0": {
+      "name": "PktEventAttendanceData",
+      "verified_name": "PktEventAttendanceData",
+      "vtable": "0x08d1e0a0",
+      "getName_va": "0x05e28ccc",
+      "serialize_va": "0x05e1e548",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0xc",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0xc",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x10",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0xc",
+          "type": "int32"
+        },
+        {
+          "offset": "0x20",
+          "type": "int32"
+        },
+        {
+          "offset": "0x38",
+          "type": "int64"
+        },
+        {
+          "offset": "0x40",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d1e208": {
+      "name": "PktEventEnchantRecoveryData",
+      "verified_name": "PktEventEnchantRecoveryData",
+      "vtable": "0x08d1e208",
+      "getName_va": "0x05e28d1c",
+      "serialize_va": "0x05e1ee34",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0xc",
+          "type": "int32"
+        },
+        {
+          "offset": "0x10",
+          "type": "int32"
+        },
+        {
+          "offset": "0x14",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x15",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x16",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x18",
+          "type": "int32"
+        },
+        {
+          "offset": "0x1c",
+          "type": "int32"
+        },
+        {
+          "offset": "0x20",
+          "type": "string"
+        },
+        {
+          "offset": "0x30",
+          "type": "string"
+        },
+        {
+          "offset": "0x40",
+          "type": "string"
+        }
+      ]
+    },
+    "0x08d1e370": {
+      "name": "PktEventSeasonPassData",
+      "verified_name": "PktEventSeasonPassData",
+      "vtable": "0x08d1e370",
+      "getName_va": "0x05e28d7c",
+      "serialize_va": "0x05e1fdd0",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0xc",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0xc",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x10",
+          "type": "int32",
+          "serializer_vtable_offset": "0x40"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0x8",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d1e838": {
+      "name": "PktGuildCrypt",
+      "verified_name": "PktGuildCrypt",
+      "vtable": "0x08d1e838",
+      "getName_va": "0x05e28e8c",
+      "serialize_va": "0x05e22120",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0xc",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0xc",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0x90",
+          "type": "int32"
+        },
+        {
+          "offset": "0x94",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d1eac0": {
+      "name": "PktGuildEmblemInfo",
+      "verified_name": "PktGuildEmblemInfo",
+      "vtable": "0x08d1eac0",
+      "getName_va": "0x05e28bec",
+      "serialize_va": "0x05e22e2c",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0xa",
+          "type": "int32",
+          "serializer_vtable_offset": "0x40"
+        },
+        {
+          "offset": "0xa",
+          "type": "int32",
+          "serializer_vtable_offset": "0x40"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0x8",
+          "type": "uint16"
+        }
+      ]
+    },
+    "0x08d1eb98": {
+      "name": "PktGuildInfo",
+      "verified_name": "PktGuildInfo",
+      "vtable": "0x08d1eb98",
+      "getName_va": "0x05e28f4c",
+      "serialize_va": "0x05e235f4",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0x10",
+          "type": "byte",
+          "serializer_vtable_offset": "0x30"
+        },
+        {
+          "offset": "0x20",
+          "type": "byte",
+          "serializer_vtable_offset": "0x30"
+        },
+        {
+          "offset": "0x28",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x58",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x70",
+          "type": "bool/enum",
+          "serializer_vtable_offset": "0x38"
+        },
+        {
+          "offset": "0x84",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x98",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0xa8",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0xad",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        },
+        {
+          "offset": "0xb0",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        },
+        {
+          "offset": "0xb0",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0xc0",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0x48",
+          "type": "string"
+        },
+        {
+          "offset": "0x58",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x60",
+          "type": "struct"
+        },
+        {
+          "offset": "0x70",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x78",
+          "type": "string"
+        },
+        {
+          "offset": "0x88",
+          "type": "struct"
+        }
+      ]
+    },
+    "0x08d1ef40": {
+      "name": "PktGuildTinyInfo",
+      "verified_name": "PktGuildTinyInfo",
+      "vtable": "0x08d1ef40",
+      "getName_va": "0x05e2900c",
+      "serialize_va": "0x05e255fc",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0x10",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x28",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x58",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0x10",
+          "type": "string"
+        },
+        {
+          "offset": "0x20",
+          "type": "struct"
+        }
+      ]
+    },
+    "0x08d1f2a0": {
+      "name": "PktItem",
+      "verified_name": "PktItem",
+      "vtable": "0x08d1f2a0",
+      "getName_va": "0x05e28c7c",
+      "serialize_va": "0x05e26ab8",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0x10",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x10",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x18",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x1c",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x20",
+          "type": "int32",
+          "serializer_vtable_offset": "0x40"
+        },
+        {
+          "offset": "0x22",
+          "type": "int32",
+          "serializer_vtable_offset": "0x40"
+        },
+        {
+          "offset": "0x24",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x50",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x60",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x64",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        },
+        {
+          "offset": "0x65",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        },
+        {
+          "offset": "0x66",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        },
+        {
+          "offset": "0xa0",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0xb8",
+          "type": "byte",
+          "serializer_vtable_offset": "0x30"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0xc",
+          "type": "int32"
+        },
+        {
+          "offset": "0x10",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d1fdc8": {
+      "name": "PktMatchGroup",
+      "verified_name": "PktMatchGroup",
+      "vtable": "0x08d1fdc8",
+      "getName_va": "0x05e339e4",
+      "serialize_va": "0x05e2ba4c",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0x10",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0x10",
+          "type": "int32"
+        },
+        {
+          "offset": "0x14",
+          "type": "int32"
+        },
+        {
+          "offset": "0x18",
+          "type": "string"
+        },
+        {
+          "offset": "0x28",
+          "type": "int32"
+        },
+        {
+          "offset": "0x2c",
+          "type": "int32"
+        },
+        {
+          "offset": "0x30",
+          "type": "int64"
+        },
+        {
+          "offset": "0x38",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d20248": {
+      "name": "PktPaidEventAttendanceData",
+      "verified_name": "PktPaidEventAttendanceData",
+      "vtable": "0x08d20248",
+      "getName_va": "0x05e33b04",
+      "serialize_va": "0x05e2d584",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0xc",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0xc",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x10",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        },
+        {
+          "offset": "0x14",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0x10",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x11",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d202d8": {
+      "name": "PktPartyMemberSimple",
+      "verified_name": "PktPartyMemberSimple",
+      "vtable": "0x08d202d8",
+      "getName_va": "0x05e33b24",
+      "serialize_va": "0x05e2da80",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0x10",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x18",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x28",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x30",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x38",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x38",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x40",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x48",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        },
+        {
+          "offset": "0x50",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0x60",
+          "type": "byte",
+          "serializer_vtable_offset": "0x30"
+        },
+        {
+          "offset": "0x80",
+          "type": "bool/enum",
+          "serializer_vtable_offset": "0x38"
+        },
+        {
+          "offset": "0xd0",
+          "type": "int64",
+          "serializer_vtable_offset": "0x60"
+        },
+        {
+          "offset": "0xd8",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0x9",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xa",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x10",
+          "type": "string"
+        },
+        {
+          "offset": "0x20",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x21",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d20368": {
+      "name": "PktPartySimple",
+      "verified_name": "PktPartySimple",
+      "vtable": "0x08d20368",
+      "getName_va": "0x05e33b44",
+      "serialize_va": "0x05e2e1f0",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [
+        {
+          "offset": "0x10",
+          "type": "bool/enum",
+          "serializer_vtable_offset": "0x38"
+        },
+        {
+          "offset": "0x38",
+          "type": "unknown_vtable_0x98",
+          "serializer_vtable_offset": "0x98"
+        },
+        {
+          "offset": "0x38",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x3c",
+          "type": "uint8",
+          "serializer_vtable_offset": "0x28"
+        },
+        {
+          "offset": "0x48",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        },
+        {
+          "offset": "0x78",
+          "type": "int16",
+          "serializer_vtable_offset": "0x50"
+        }
+      ],
+      "existing_fields": [
+        {
+          "offset": "0xc0",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xc8",
+          "type": "struct"
+        }
+      ]
+    },
+    "0x08d20440": {
+      "name": "PktPeriodServerData",
+      "verified_name": "PktPeriodServerData",
+      "vtable": "0x08d20440",
+      "getName_va": "0x05e33b74",
+      "serialize_va": "0x05e2e8d4",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0x10",
+          "type": "int64"
+        },
+        {
+          "offset": "0x18",
+          "type": "int64"
+        },
+        {
+          "offset": "0x20",
+          "type": "string"
+        },
+        {
+          "offset": "0x30",
+          "type": "int32"
+        },
+        {
+          "offset": "0x38",
+          "type": "int64"
+        },
+        {
+          "offset": "0x40",
+          "type": "int32"
+        },
+        {
+          "offset": "0x48",
+          "type": "struct"
+        },
+        {
+          "offset": "0x58",
+          "type": "uint16"
+        }
+      ]
+    },
+    "0x08d20518": {
+      "name": "PktPortraitGroupData",
+      "verified_name": "PktPortraitGroupData",
+      "vtable": "0x08d20518",
+      "getName_va": "0x05e33ba4",
+      "serialize_va": "0x05e11ef0",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0xc",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d206c8": {
+      "name": "PktPvpLocationSearchData",
+      "verified_name": "PktPvpLocationSearchData",
+      "vtable": "0x08d206c8",
+      "getName_va": "0x05e33c14",
+      "serialize_va": "0x05e2f8b0",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0x9",
+          "type": "uint8"
+        },
+        {
+          "offset": "0xa",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d208c0": {
+      "name": "PktQuest",
+      "verified_name": "PktQuest",
+      "vtable": "0x08d208c0",
+      "getName_va": "0x05e33c84",
+      "serialize_va": "0x05e30a00",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0xc",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d20908": {
+      "name": "PktQuestAct",
+      "verified_name": "PktQuestAct",
+      "vtable": "0x08d20908",
+      "getName_va": "0x05e33c94",
+      "serialize_va": "0x05e26f54",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0x50",
+          "type": "struct"
+        },
+        {
+          "offset": "0x70",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x78",
+          "type": "struct"
+        },
+        {
+          "offset": "0x198",
+          "type": "struct"
+        },
+        {
+          "offset": "0x1a8",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x1ac",
+          "type": "int32"
+        },
+        {
+          "offset": "0x1b0",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x1b8",
+          "type": "int64"
+        }
+      ]
+    },
+    "0x08d20998": {
+      "name": "PktQuestData",
+      "verified_name": "PktQuestData",
+      "vtable": "0x08d20998",
+      "getName_va": "0x05e33cb4",
+      "serialize_va": "0x05e30fdc",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0x10",
+          "type": "int64"
+        },
+        {
+          "offset": "0x18",
+          "type": "int64"
+        }
+      ]
+    },
+    "0x08d21800": {
+      "name": "PktTutorial",
+      "verified_name": "PktTutorial",
+      "vtable": "0x08d21800",
+      "getName_va": "0x05e63358",
+      "serialize_va": "0x05e3757c",
+      "sub_vtable_count": 2,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0x8",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d21848": {
+      "name": "PktTutorialData",
+      "verified_name": "PktTutorialData",
+      "vtable": "0x08d21848",
+      "getName_va": "0x05e63368",
+      "serialize_va": "0x05e377f8",
+      "sub_vtable_count": 1,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0x8",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d21b98": {
+      "name": "PktWandererTradeItem",
+      "verified_name": "PktWandererTradeItem",
+      "vtable": "0x08d21b98",
+      "getName_va": "0x05e6c228",
+      "serialize_va": "0x05e0e328",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0xa",
+          "type": "uint16"
+        },
+        {
+          "offset": "0xc",
+          "type": "uint16"
+        },
+        {
+          "offset": "0xe",
+          "type": "uint8"
+        },
+        {
+          "offset": "0x10",
+          "type": "int64"
+        }
+      ]
+    },
+    "0x08d21c28": {
+      "name": "PktWorldInfo",
+      "verified_name": "PktWorldInfo",
+      "vtable": "0x08d21c28",
+      "getName_va": "0x05e6c258",
+      "serialize_va": "0x05e64924",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0xc",
+          "type": "uint8"
+        }
+      ]
+    },
+    "0x08d21cb8": {
+      "name": "PktWorldMapPointData",
+      "verified_name": "PktWorldMapPointData",
+      "vtable": "0x08d21cb8",
+      "getName_va": "0x05e6c288",
+      "serialize_va": "0x05e64ab8",
+      "sub_vtable_count": 3,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0x8",
+          "type": "int32"
+        }
+      ]
+    },
+    "0x08d21d00": {
+      "name": "PktYaw",
+      "verified_name": "PktYaw",
+      "vtable": "0x08d21d00",
+      "getName_va": "0x05e6c268",
+      "serialize_va": "0x05e64ba4",
+      "sub_vtable_count": 2,
+      "has_field_names": false,
+      "serialize_fields": [],
+      "existing_fields": [
+        {
+          "offset": "0x8",
+          "type": "uint8"
+        }
+      ]
+    }
+  }
+}
