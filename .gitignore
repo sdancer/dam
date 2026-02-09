@@ -1,0 +1,15 @@
+# Large binaries
+lib/
+com.netmarble.thered.apk
+config.*.apk
+
+# Python venv
+.venv/
+
+# Extracted PAK files
+pak_extracted/
+
+# APK metadata
+META-INF/
+stamp-cert-sha256
+__pycache__/

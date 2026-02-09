@@ -1,0 +1,57 @@
+{
+  "initial_key_hex": "e313af529c6655cde45aa73a22e1dff5",
+  "initial_key_bytes": [
+    227,
+    19,
+    175,
+    82,
+    156,
+    102,
+    85,
+    205,
+    228,
+    90,
+    167,
+    58,
+    34,
+    225,
+    223,
+    245
+  ],
+  "initial_iv_hex": "a4a0ebe78ab88b363d2f68acc1f66e52",
+  "initial_iv_bytes": [
+    164,
+    160,
+    235,
+    231,
+    138,
+    184,
+    139,
+    54,
+    61,
+    47,
+    104,
+    172,
+    193,
+    246,
+    110,
+    82
+  ],
+  "symbol_info": {
+    "_InitialKey": {
+      "virtual_address": "0x3c0410",
+      "size": 16,
+      "section": ".data",
+      "type": "OBJECT"
+    },
+    "_InitialIV": {
+      "virtual_address": "0x3c0420",
+      "size": 16,
+      "section": ".data",
+      "type": "OBJECT"
+    }
+  },
+  "source_binary": "/home/sdancer/games/vampir/lib/arm64-v8a/libnmsssa.so",
+  "algorithm": "AES-128-CBC",
+  "key_size_bits": 128
+}

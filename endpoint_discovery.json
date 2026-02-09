@@ -1,0 +1,1050 @@
+{
+  "urls": [
+    {
+      "url": "https://apis.netmarble.com/gmc2/v4/constants",
+      "address": "0x57baaa",
+      "environment": "production",
+      "purpose": "GMC2 (Game Management Console) constants - returns game configuration, server URLs, log endpoints"
+    },
+    {
+      "url": "https://dev-apis.netmarble.com/gmc2/v4/constants",
+      "address": "0x57bad7",
+      "environment": "dev",
+      "purpose": "GMC2 constants (development)"
+    },
+    {
+      "url": "https://alpha-apis.netmarble.com/gmc2/v4/constants",
+      "address": "0x57bb08",
+      "environment": "alpha",
+      "purpose": "GMC2 constants (alpha testing)"
+    },
+    {
+      "url": "https://apis.netmarble.com/gc2",
+      "address": "0x6c0211",
+      "environment": "production",
+      "purpose": "GC2 (Game Center v2) - Netmarble SDK backend for auth, billing, push"
+    },
+    {
+      "url": "https://dev-apis.netmarble.com/gc2",
+      "address": "0x6c0230",
+      "environment": "dev",
+      "purpose": "GC2 backend (development)"
+    },
+    {
+      "url": "https://alpha-apis.netmarble.com/gc2",
+      "address": "0x6c0253",
+      "environment": "alpha",
+      "purpose": "GC2 backend (alpha testing)"
+    },
+    {
+      "url": "https://android.crashsight.wetest.net/pb/async",
+      "address": "0x68c684",
+      "environment": "production",
+      "purpose": "Crash reporting (CrashSight by WeTest/Tencent)"
+    },
+    {
+      "url": "http://game.local/",
+      "address": "0x6c57bd",
+      "environment": "local/dev",
+      "purpose": "Local game server for development"
+    },
+    {
+      "url": "http://localhost",
+      "address": "0x54de73",
+      "environment": "local/dev",
+      "purpose": "Localhost fallback"
+    }
+  ],
+  "ip_port_patterns": [
+    {
+      "string": "127.0.0.1",
+      "address": "0x6c432a",
+      "purpose": "Localhost/loopback address"
+    },
+    {
+      "string": "127.0.0.1/",
+      "address": "0x6c5894",
+      "purpose": "Localhost with path"
+    },
+    {
+      "string": "1.2.0.4",
+      "address": "0x6bd54f",
+      "purpose": "Test/placeholder IP or version string"
+    },
+    {
+      "string": "Connected to %s (%s) port %u",
+      "address": "0x549ad0",
+      "purpose": "libcurl connection success log format"
+    },
+    {
+      "string": "Connecting to %s (%s) port %d",
+      "address": "0x68b74d",
+      "purpose": "libcurl connection initiation log format"
+    },
+    {
+      "string": "Connecting to port: %d",
+      "address": "0x68bb8e",
+      "purpose": "Port connection log"
+    },
+    {
+      "string": "Failed to connect to %s port %u after %ld ms: %s",
+      "address": "0x5a3f99",
+      "purpose": "Connection failure log format"
+    },
+    {
+      "string": "connect to %s port %u failed: %s",
+      "address": "0x5a446d",
+      "purpose": "Connection failure log"
+    },
+    {
+      "string": "%s socket %d connected: [%s:%d] -> [%s:%d]",
+      "address": "0x69e26b",
+      "purpose": "Socket connection established log"
+    },
+    {
+      "string": "[id:%u, host:%s, port:%u, query:%s...]",
+      "address": "0x69e3e1",
+      "purpose": "Connection info dump format"
+    },
+    {
+      "string": "IP Address:%d.%d.%d.%d",
+      "address": "0x68b65d",
+      "purpose": "IP address display format"
+    },
+    {
+      "string": "Alt-svc connecting from [%s]%s:%d to [%s]%s:%d",
+      "address": "0x68b59c",
+      "purpose": "Alt-svc connection redirect"
+    }
+  ],
+  "server_strings": [
+    {
+      "string": "LobbyServerAddr",
+      "address": "0x5bb0c5",
+      "category": "lobby_addressing",
+      "purpose": "Lobby server IP/hostname property"
+    },
+    {
+      "string": "LobbyServerPort",
+      "address": "0x55374a",
+      "category": "lobby_addressing",
+      "purpose": "Lobby server port number property"
+    },
+    {
+      "string": "BeaconPort",
+      "address": "0x55375a",
+      "category": "port_config",
+      "purpose": "UE beacon port for server discovery"
+    },
+    {
+      "string": "ListenPort",
+      "address": "0x553765",
+      "category": "port_config",
+      "purpose": "UE listen port for incoming connections"
+    },
+    {
+      "string": "GamePort",
+      "address": "0x553779",
+      "category": "port_config",
+      "purpose": "Game server port"
+    },
+    {
+      "string": "MeshPort",
+      "address": "0x553770",
+      "category": "port_config",
+      "purpose": "Mesh networking port"
+    },
+    {
+      "string": "forumServerUrl",
+      "address": "0x5f0839",
+      "category": "misc_urls",
+      "purpose": "Netmarble forum/community URL"
+    },
+    {
+      "string": "logUrl",
+      "address": "0x5f0917",
+      "category": "misc_urls",
+      "purpose": "Log submission URL (from GMC2 constants)"
+    },
+    {
+      "string": "NetmarbleSZone",
+      "address": "0x63cb68",
+      "category": "zone_config",
+      "purpose": "Netmarble S (store/delivery) zone identifier"
+    },
+    {
+      "string": "ServerInfoFile",
+      "address": "0x64d027",
+      "category": "config_files",
+      "purpose": "Server info configuration file reference"
+    },
+    {
+      "string": "IrisNetDriverConfig",
+      "address": "0x61648e",
+      "category": "net_driver",
+      "purpose": "Iris replication system net driver config"
+    },
+    {
+      "string": "IrisNetDriverConfigs",
+      "address": "0x592dcd",
+      "category": "net_driver",
+      "purpose": "Iris net driver config collection"
+    },
+    {
+      "string": "GameNetDriver",
+      "address": "0x5b0149",
+      "category": "net_driver",
+      "purpose": "Main game network driver"
+    },
+    {
+      "string": "PacketDest.csv",
+      "address": "0x5476e5",
+      "category": "config_files",
+      "purpose": "Packet routing destination table"
+    },
+    {
+      "string": "ServerGroup.csv",
+      "address": "0x547a1d",
+      "category": "config_files",
+      "purpose": "Server group definitions"
+    },
+    {
+      "string": "ServerGroupName.csv",
+      "address": "0x5483b8",
+      "category": "config_files",
+      "purpose": "Server group display names"
+    },
+    {
+      "string": "ServerTransfer.csv",
+      "address": "0x5479af",
+      "category": "config_files",
+      "purpose": "Server transfer rules"
+    },
+    {
+      "string": "ServerTransferGroup.csv",
+      "address": "0x547a2d",
+      "category": "config_files",
+      "purpose": "Server transfer group definitions"
+    },
+    {
+      "string": "ServerAuctionGroup.csv",
+      "address": "0x547a76",
+      "category": "config_files",
+      "purpose": "Cross-server auction groups"
+    },
+    {
+      "string": "LobbyResultCodeString.csv",
+      "address": "0x548200",
+      "category": "config_files",
+      "purpose": "Lobby error/result code definitions"
+    },
+    {
+      "string": "WorldMove.csv",
+      "address": "0x548256",
+      "category": "config_files",
+      "purpose": "World movement/teleportation definitions"
+    },
+    {
+      "string": "ENMSDKZone::Dev",
+      "address": "0x5494f6",
+      "category": "sdk_zones",
+      "purpose": "Development environment zone"
+    },
+    {
+      "string": "ENMSDKZone::Alpha",
+      "address": "0x698067",
+      "category": "sdk_zones",
+      "purpose": "Alpha testing environment zone"
+    },
+    {
+      "string": "ENMSDKZone::Real",
+      "address": "0x5fbfc8",
+      "category": "sdk_zones",
+      "purpose": "Production environment zone"
+    },
+    {
+      "string": "NMGameCode",
+      "address": "0x661701",
+      "category": "identifiers",
+      "purpose": "Netmarble game code identifier"
+    },
+    {
+      "string": "NMGameToken",
+      "address": "0x5e6cd5",
+      "category": "identifiers",
+      "purpose": "Netmarble game token for server auth"
+    },
+    {
+      "string": "NetmarbleSToken",
+      "address": "0x5e6d10",
+      "category": "identifiers",
+      "purpose": "Netmarble S platform token"
+    },
+    {
+      "string": "NetmarbleClientId",
+      "address": "0x68835b",
+      "category": "identifiers",
+      "purpose": "Netmarble client identification"
+    },
+    {
+      "string": "gameCode",
+      "address": "0x6616a6",
+      "category": "identifiers",
+      "purpose": "Game code parameter"
+    },
+    {
+      "string": "channelCode",
+      "address": "0x661551",
+      "category": "identifiers",
+      "purpose": "Channel/platform code (Google, Apple, etc)"
+    },
+    {
+      "string": "deviceKey",
+      "address": "0x537ace",
+      "category": "identifiers",
+      "purpose": "Device key for identification"
+    },
+    {
+      "string": "nmDeviceKey",
+      "address": "0x537ad8",
+      "category": "identifiers",
+      "purpose": "Netmarble device key"
+    },
+    {
+      "string": "ClientVersion",
+      "address": "0x5e0fef",
+      "category": "version",
+      "purpose": "Client version string for version check"
+    },
+    {
+      "string": "ClientVersionNotSupport",
+      "address": "0x55311a",
+      "category": "version",
+      "purpose": "Version check failure - client too old"
+    }
+  ],
+  "connection_flow": [
+    {
+      "string": "ENetmarbleSDKStep::StartService",
+      "address": "0x6686a8",
+      "phase": 1,
+      "step": "sdk_init",
+      "description": "Initialize Netmarble SDK service"
+    },
+    {
+      "string": "ENetmarbleSDKStep::SilentlySignIn",
+      "address": "0x5e8ccf",
+      "phase": 1,
+      "step": "silent_signin",
+      "description": "Attempt silent sign-in with stored credentials"
+    },
+    {
+      "string": "ENetmarbleSDKStep::AutoSignIn",
+      "address": "0x5e8d3b",
+      "phase": 1,
+      "step": "auto_signin",
+      "description": "Auto sign-in fallback"
+    },
+    {
+      "string": "ENetmarbleSDKStep::ShowAuthMemberLogin",
+      "address": "0x5e3e38",
+      "phase": 1,
+      "step": "manual_login",
+      "description": "Show login UI if silent/auto fails"
+    },
+    {
+      "string": "ENetmarbleSDKStep::SingInForGuest",
+      "address": "0x551fa8",
+      "phase": 1,
+      "step": "guest_signin",
+      "description": "Guest account sign-in"
+    },
+    {
+      "string": "ENetmarbleSDKStep::SingInForNetmarble",
+      "address": "0x64fc10",
+      "phase": 1,
+      "step": "netmarble_signin",
+      "description": "Netmarble account sign-in"
+    },
+    {
+      "string": "OnSuccessNetmarbleSDKAuth",
+      "address": "0x6020d4",
+      "phase": 1,
+      "step": "auth_success",
+      "description": "Netmarble SDK auth completed successfully"
+    },
+    {
+      "string": "https://apis.netmarble.com/gmc2/v4/constants",
+      "address": "0x57baaa",
+      "phase": 2,
+      "step": "gmc2_fetch",
+      "description": "Fetch GMC2 constants (server URLs, config, logUrl, NMP url)"
+    },
+    {
+      "string": "Failed to get NMP url from GMC2",
+      "address": "0x6c095b",
+      "phase": 2,
+      "step": "gmc2_error",
+      "description": "Error: NMP URL not in GMC2 response"
+    },
+    {
+      "string": "PktLobbyVersion",
+      "address": "0x5e0fb5",
+      "phase": 2,
+      "step": "version_check_send",
+      "description": "Send version check to lobby server"
+    },
+    {
+      "string": "PktLobbyVersionResult",
+      "address": "0x56365d",
+      "phase": 2,
+      "step": "version_check_recv",
+      "description": "Receive version check result"
+    },
+    {
+      "string": "PktVersion",
+      "address": "0x5e0ffd",
+      "phase": 2,
+      "step": "version_pkt",
+      "description": "General version packet"
+    },
+    {
+      "string": "PktVersionResult",
+      "address": "0x563673",
+      "phase": 2,
+      "step": "version_result",
+      "description": "General version result"
+    },
+    {
+      "string": "PktLobbyLogin",
+      "address": "0x5e3e14",
+      "phase": 3,
+      "step": "lobby_login_send",
+      "description": "Send lobby login request with tokens"
+    },
+    {
+      "string": "PktLobbyLoginResult",
+      "address": "0x5636bd",
+      "phase": 3,
+      "step": "lobby_login_recv",
+      "description": "Receive lobby login result"
+    },
+    {
+      "string": "PktLobbyNetmarbleSSecurityVerify",
+      "address": "0x536617",
+      "phase": 3,
+      "step": "security_verify",
+      "description": "Netmarble S security verification"
+    },
+    {
+      "string": "PktLobbyNetmarbleSSecurityVerifyResult",
+      "address": "0x561f5b",
+      "phase": 3,
+      "step": "security_verify_result",
+      "description": "Security verification result"
+    },
+    {
+      "string": "PktLobbyInHouseOtpVerify",
+      "address": "0x536638",
+      "phase": 3,
+      "step": "otp_verify",
+      "description": "In-house OTP verification"
+    },
+    {
+      "string": "PktLobbyInHouseOtpVerifyResult",
+      "address": "0x561f82",
+      "phase": 3,
+      "step": "otp_verify_result",
+      "description": "OTP verification result"
+    },
+    {
+      "string": "PktLobbyInHouseOtpRequest",
+      "address": "0x55110f",
+      "phase": 3,
+      "step": "otp_request",
+      "description": "Request in-house OTP code"
+    },
+    {
+      "string": "PktLobbyInHouseOtpRequestResult",
+      "address": "0x56248e",
+      "phase": 3,
+      "step": "otp_request_result",
+      "description": "OTP request result"
+    },
+    {
+      "string": "PktLobbyServerListRead",
+      "address": "0x6872cf",
+      "phase": 4,
+      "step": "server_list_read",
+      "description": "Request available server list"
+    },
+    {
+      "string": "PktLobbyServerListReadResult",
+      "address": "0x564eb2",
+      "phase": 4,
+      "step": "server_list_result",
+      "description": "Receive server list (ServerGroup data)"
+    },
+    {
+      "string": "_InitServerList",
+      "address": "0x54f38d",
+      "phase": 4,
+      "step": "init_server_list",
+      "description": "Initialize server list data"
+    },
+    {
+      "string": "_SetServerList",
+      "address": "0x54f39d",
+      "phase": 4,
+      "step": "set_server_list",
+      "description": "Set/populate server list UI"
+    },
+    {
+      "string": "ServerGroupList",
+      "address": "0x54f490",
+      "phase": 4,
+      "step": "server_group_list",
+      "description": "Server group list populated"
+    },
+    {
+      "string": "ServerGroupDataList",
+      "address": "0x550743",
+      "phase": 4,
+      "step": "server_group_data",
+      "description": "Full server group data list"
+    },
+    {
+      "string": "PktLobbyServerRead",
+      "address": "0x6878a9",
+      "phase": 4,
+      "step": "server_read",
+      "description": "Read specific server details"
+    },
+    {
+      "string": "PktLobbyServerReadResult",
+      "address": "0x5655bb",
+      "phase": 4,
+      "step": "server_read_result",
+      "description": "Server details result"
+    },
+    {
+      "string": "PktLobbyCharacterListRead",
+      "address": "0x687305",
+      "phase": 4,
+      "step": "char_list_read",
+      "description": "Request character list on selected server"
+    },
+    {
+      "string": "PktLobbyCharacterListReadResult",
+      "address": "0x564ef4",
+      "phase": 4,
+      "step": "char_list_result",
+      "description": "Character list result"
+    },
+    {
+      "string": "PktLobbyLastPlayedCharacterListRead",
+      "address": "0x687371",
+      "phase": 4,
+      "step": "last_char_read",
+      "description": "Get last played characters"
+    },
+    {
+      "string": "PktLobbyLastPlayedCharacterListReadResult",
+      "address": "0x564f78",
+      "phase": 4,
+      "step": "last_char_result",
+      "description": "Last played characters result"
+    },
+    {
+      "string": "PktLobbyCurrentConnectedCharacterRead",
+      "address": "0x6878bc",
+      "phase": 4,
+      "step": "connected_char_read",
+      "description": "Check currently connected character"
+    },
+    {
+      "string": "PktLobbyCurrentConnectedCharacterReadResult",
+      "address": "0x5655d4",
+      "phase": 4,
+      "step": "connected_char_result",
+      "description": "Connected character result"
+    },
+    {
+      "string": "PktLogin",
+      "address": "0x5e3e2f",
+      "phase": 5,
+      "step": "game_login_send",
+      "description": "Login to game server (after selecting character)"
+    },
+    {
+      "string": "PktLoginResult",
+      "address": "0x5636d1",
+      "phase": 5,
+      "step": "game_login_recv",
+      "description": "Game server login result"
+    },
+    {
+      "string": "EWorldMoveType::Login",
+      "address": "0x5e3ee5",
+      "phase": 5,
+      "step": "world_move_login",
+      "description": "World movement type: initial login entry"
+    },
+    {
+      "string": "PktWorldMoveCast",
+      "address": "0x552c66",
+      "phase": 5,
+      "step": "world_move_cast",
+      "description": "Cast world movement (zone transition)"
+    },
+    {
+      "string": "PktWorldMoveCastResult",
+      "address": "0x562708",
+      "phase": 5,
+      "step": "world_move_cast_result",
+      "description": "World move cast result"
+    },
+    {
+      "string": "PktWorldMoveStart",
+      "address": "0x55451a",
+      "phase": 5,
+      "step": "world_move_start",
+      "description": "Start world movement"
+    },
+    {
+      "string": "PktWorldMoveStartResult",
+      "address": "0x5628ba",
+      "phase": 5,
+      "step": "world_move_start_result",
+      "description": "World move start result"
+    },
+    {
+      "string": "PktWorldMoveFinish",
+      "address": "0x605f93",
+      "phase": 5,
+      "step": "world_move_finish",
+      "description": "Finish world movement - now in game world"
+    },
+    {
+      "string": "PktWorldMoveFinishResult",
+      "address": "0x563c54",
+      "phase": 5,
+      "step": "world_move_finish_result",
+      "description": "World move finish result"
+    },
+    {
+      "string": "PktServerGroupDataNotify",
+      "address": "0x536332",
+      "phase": 5,
+      "step": "server_group_notify",
+      "description": "Server group data notification (push)"
+    },
+    {
+      "string": "PktServerGroupMatchInfoRead",
+      "address": "0x687afc",
+      "phase": 5,
+      "step": "server_group_match_read",
+      "description": "Read server group match info"
+    },
+    {
+      "string": "PktServerGroupMatchInfoReadResult",
+      "address": "0x565871",
+      "phase": 5,
+      "step": "server_group_match_result",
+      "description": "Server group match info result"
+    },
+    {
+      "string": "PktServerTransferRequest",
+      "address": "0x5510cf",
+      "phase": 6,
+      "step": "transfer_request",
+      "description": "Request server transfer"
+    },
+    {
+      "string": "PktServerTransferRequestResult",
+      "address": "0x562442",
+      "phase": 6,
+      "step": "transfer_result",
+      "description": "Server transfer result"
+    },
+    {
+      "string": "PktServerTransferCheck",
+      "address": "0x5ff95d",
+      "phase": 6,
+      "step": "transfer_check",
+      "description": "Check transfer eligibility"
+    },
+    {
+      "string": "PktServerTransferCheckResult",
+      "address": "0x563b28",
+      "phase": 6,
+      "step": "transfer_check_result",
+      "description": "Transfer eligibility result"
+    },
+    {
+      "string": "PktServerTransferStatus",
+      "address": "0x5779c4",
+      "phase": 6,
+      "step": "transfer_status",
+      "description": "Transfer status update"
+    },
+    {
+      "string": "PktServerTransferListRead",
+      "address": "0x687411",
+      "phase": 6,
+      "step": "transfer_list_read",
+      "description": "Read available transfer destinations"
+    },
+    {
+      "string": "PktServerTransferListReadResult",
+      "address": "0x565036",
+      "phase": 6,
+      "step": "transfer_list_result",
+      "description": "Transfer destinations result"
+    },
+    {
+      "string": "PktLogout",
+      "address": "0x54c017",
+      "phase": 7,
+      "step": "logout",
+      "description": "Logout from game server"
+    },
+    {
+      "string": "PktLogoutResult",
+      "address": "0x5622d5",
+      "phase": 7,
+      "step": "logout_result",
+      "description": "Logout result"
+    },
+    {
+      "string": "PktServerExit",
+      "address": "0x566ff0",
+      "phase": 7,
+      "step": "server_exit",
+      "description": "Exit game server (back to lobby)"
+    },
+    {
+      "string": "PktServerExitResult",
+      "address": "0x5629bd",
+      "phase": 7,
+      "step": "server_exit_result",
+      "description": "Server exit result"
+    },
+    {
+      "string": "NetmarbleLogout",
+      "address": "0x54c03f",
+      "phase": 7,
+      "step": "sdk_logout",
+      "description": "Netmarble SDK logout"
+    },
+    {
+      "string": "PktReconnectPopUpNotify",
+      "address": "0x534f73",
+      "phase": 8,
+      "step": "reconnect_popup",
+      "description": "Reconnect popup notification"
+    },
+    {
+      "string": "PktWorldMoveCastReconnectNotify",
+      "address": "0x534ce2",
+      "phase": 8,
+      "step": "reconnect_world_move",
+      "description": "Reconnect during world movement"
+    },
+    {
+      "string": "ReconnectSocket",
+      "address": "0x56e769",
+      "phase": 8,
+      "step": "reconnect_socket",
+      "description": "Socket-level reconnection"
+    },
+    {
+      "string": "PktNetmarbleSAuthUpdate",
+      "address": "0x62795b",
+      "phase": 9,
+      "step": "auth_update",
+      "description": "Refresh Netmarble S auth token"
+    },
+    {
+      "string": "PktNetmarbleSAuthUpdateResult",
+      "address": "0x5643a8",
+      "phase": 9,
+      "step": "auth_update_result",
+      "description": "Auth token refresh result"
+    },
+    {
+      "string": "ELobbyState::Splash",
+      "address": "0x607380",
+      "phase": 0,
+      "step": "state_splash",
+      "description": "Lobby state: splash screen"
+    },
+    {
+      "string": "ELobbyState::Title",
+      "address": "0x64bc32",
+      "phase": 0,
+      "step": "state_title",
+      "description": "Lobby state: title screen"
+    },
+    {
+      "string": "ELobbyState::CharacterSelect",
+      "address": "0x572592",
+      "phase": 0,
+      "step": "state_char_select",
+      "description": "Lobby state: character selection"
+    },
+    {
+      "string": "ELobbyState::CharacterClassSelect",
+      "address": "0x5724e6",
+      "phase": 0,
+      "step": "state_class_select",
+      "description": "Lobby state: class selection"
+    },
+    {
+      "string": "ELobbyState::CharacterCreateIntro",
+      "address": "0x5c9649",
+      "phase": 0,
+      "step": "state_create_intro",
+      "description": "Lobby state: character creation intro"
+    },
+    {
+      "string": "ELobbyState::CharacterCustomize",
+      "address": "0x618f28",
+      "phase": 0,
+      "step": "state_customize",
+      "description": "Lobby state: character customization"
+    },
+    {
+      "string": "ELobbyState::TrasnsitionSelectWorld",
+      "address": "0x671198",
+      "phase": 0,
+      "step": "state_select_world",
+      "description": "Lobby state: transitioning to world selection"
+    },
+    {
+      "string": "ELobbyState::TransitionInGameWorld",
+      "address": "0x67187d",
+      "phase": 0,
+      "step": "state_ingame",
+      "description": "Lobby state: transitioning into game world"
+    }
+  ],
+  "auth_strings": [
+    {
+      "string": "accessToken",
+      "address": "0x5e6b3f",
+      "category": "platform_token",
+      "purpose": "Primary access token from Netmarble SDK"
+    },
+    {
+      "string": "channelAccessToken",
+      "address": "0x5e6b6e",
+      "category": "platform_token",
+      "purpose": "Channel-specific access token (Google/Apple/etc)"
+    },
+    {
+      "string": "NetmarbleIdAccessToken",
+      "address": "0x5e6b96",
+      "category": "platform_token",
+      "purpose": "Netmarble account access token"
+    },
+    {
+      "string": "EmailAuthAccessToken",
+      "address": "0x5e6b81",
+      "category": "platform_token",
+      "purpose": "Email auth access token"
+    },
+    {
+      "string": "IDVAccessToken",
+      "address": "0x5e6bad",
+      "category": "platform_token",
+      "purpose": "Identity verification access token"
+    },
+    {
+      "string": "EmailAuthRefreshToken",
+      "address": "0x5e6c44",
+      "category": "platform_token",
+      "purpose": "Email auth refresh token"
+    },
+    {
+      "string": "refresh_token",
+      "address": "0x5e69cd",
+      "category": "platform_token",
+      "purpose": "OAuth refresh token field"
+    },
+    {
+      "string": "bForceRefreshToken",
+      "address": "0x5e6c5a",
+      "category": "platform_token",
+      "purpose": "Force token refresh flag"
+    },
+    {
+      "string": "RefreshTokenForGooglePlay",
+      "address": "0x53cfb1",
+      "category": "platform_token",
+      "purpose": "Google Play refresh token"
+    },
+    {
+      "string": "beforeAccessTokenExpireTimeSec",
+      "address": "0x68e6f1",
+      "category": "platform_token",
+      "purpose": "Pre-expiry refresh timing"
+    },
+    {
+      "string": "SavedTicksForGooglePlayAccessToken",
+      "address": "0x5e6b4b",
+      "category": "platform_token",
+      "purpose": "Google Play token expiry tracking"
+    },
+    {
+      "string": "NMGameToken",
+      "address": "0x5e6cd5",
+      "category": "game_token",
+      "purpose": "Game-specific token for server auth"
+    },
+    {
+      "string": "NetmarbleSToken",
+      "address": "0x5e6d10",
+      "category": "game_token",
+      "purpose": "Netmarble S platform token"
+    },
+    {
+      "string": "gameToken is null or empty",
+      "address": "0x52bba8",
+      "category": "game_token",
+      "purpose": "Validation: game token required"
+    },
+    {
+      "string": "idToken is null or empty",
+      "address": "0x52bbc3",
+      "category": "game_token",
+      "purpose": "Validation: ID token required"
+    },
+    {
+      "string": "ErrNotExistGameToken",
+      "address": "0x5e6ca9",
+      "category": "game_token",
+      "purpose": "Error: game token not found"
+    },
+    {
+      "string": "ErrNotLastestGameToken",
+      "address": "0x5e6cbe",
+      "category": "game_token",
+      "purpose": "Error: game token is stale"
+    },
+    {
+      "string": "ErrTokenInvalidGameCode",
+      "address": "0x6616d2",
+      "category": "game_token",
+      "purpose": "Error: token has invalid game code"
+    },
+    {
+      "string": "ErrTokenInvalidPublicKey",
+      "address": "0x537bc7",
+      "category": "game_token",
+      "purpose": "Error: token has invalid public key"
+    },
+    {
+      "string": "SessionTicket",
+      "address": "0x56ea0f",
+      "category": "session",
+      "purpose": "Session ticket for maintaining connection"
+    },
+    {
+      "string": "SessionTimeOut",
+      "address": "0x54d445",
+      "category": "session",
+      "purpose": "Session timeout handling"
+    },
+    {
+      "string": "sessionIdTimeout",
+      "address": "0x54c274",
+      "category": "session",
+      "purpose": "Session ID timeout"
+    },
+    {
+      "string": "bLogoutOnSessionTimeout",
+      "address": "0x54c1fe",
+      "category": "session",
+      "purpose": "Auto-logout on session timeout"
+    },
+    {
+      "string": "TermRefreshSessionMinutes",
+      "address": "0x5950bf",
+      "category": "session",
+      "purpose": "Session refresh interval (minutes)"
+    },
+    {
+      "string": "SilentlySigninTokenForNetmarbleIds",
+      "address": "0x5a18bc",
+      "category": "silent_auth",
+      "purpose": "Stored token for silent sign-in"
+    },
+    {
+      "string": "AccessTokenForNetmarbleId",
+      "address": "0x68aab7",
+      "category": "silent_auth",
+      "purpose": "Stored access token by Netmarble ID"
+    },
+    {
+      "string": "ChannelCodesForNetmarbleId",
+      "address": "0x68aa9c",
+      "category": "silent_auth",
+      "purpose": "Stored channel codes by Netmarble ID"
+    },
+    {
+      "string": "ChannelTypeForNetmarbleId",
+      "address": "0x68aad1",
+      "category": "silent_auth",
+      "purpose": "Stored channel type by Netmarble ID"
+    },
+    {
+      "string": "DeviceKeyForNetmarbleIds",
+      "address": "0x5a18a3",
+      "category": "silent_auth",
+      "purpose": "Stored device key by Netmarble ID"
+    },
+    {
+      "string": "netmarbleId",
+      "address": "0x68aa90",
+      "category": "silent_auth",
+      "purpose": "Netmarble ID field"
+    },
+    {
+      "string": "PrepareIntegrityTokenRequest",
+      "address": "0x5512e8",
+      "category": "integrity",
+      "purpose": "Google Play Integrity API token request"
+    },
+    {
+      "string": "StandardIntegrityTokenRequest",
+      "address": "0x5514cd",
+      "category": "integrity",
+      "purpose": "Standard Integrity token request"
+    },
+    {
+      "string": "IntegrityTokenRequest",
+      "address": "0x55179f",
+      "category": "integrity",
+      "purpose": "General integrity token request"
+    },
+    {
+      "string": "PktLobbyNetmarbleSSecurityVerify",
+      "address": "0x536617",
+      "category": "security",
+      "purpose": "Netmarble S security verification packet"
+    },
+    {
+      "string": "PktNetmarbleSAuthUpdate",
+      "address": "0x62795b",
+      "category": "security",
+      "purpose": "Auth token refresh packet"
+    },
+    {
+      "string": "NetmarbleSec",
+      "address": "0x68e744",
+      "category": "security",
+      "purpose": "Netmarble security module identifier"
+    }
+  ]
+}
