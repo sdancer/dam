@@ -210,3 +210,42 @@ may have been disabled/changed in this version.
 - The 4-byte C->S header is **CRC32** (u32 LE) of the opcode + payload bytes (`plaintext[5:]`), confirmed for all 50 packets
 - The 3-byte S->C header is **not** CRC32; byte 0 is always `0x00` in plaintext, bytes 1-2 vary but are deterministic per opcode
 - Opcodes are consistent with the 1195-entry map in `packet_opcodes.json`
+
+---
+
+## 9. Payload Serialization
+
+After the header and opcode, the remaining bytes are the **payload** — serialized packet fields.
+
+### Field Serialization Order
+
+Fields are serialized sequentially in the order defined by the packet class's `Serialize()` function, which matches the field order in `packet_field_types_v2.json`. Fields are **not** padded or aligned — they are packed tightly.
+
+### Base Class Prefix
+
+Some packet classes inherit from a base class that serializes its own fields **before** the derived class fields. This produces a prefix on the wire that is not present in the field definitions JSON (which only lists the derived class's fields).
+
+Known pattern: a **uint32** (4 bytes LE) is serialized at the start of the payload before the first defined field. The value is typically `0`.
+
+Packets confirmed to have this base class prefix (discovered empirically from captures):
+
+| Opcode | Name | Evidence |
+|--------|------|----------|
+| 608 | PktSkillStartResult | Without prefix, float positions decode as garbage; with prefix, TargetPosX/Y become valid world coords (~105K, ~134K) |
+| 1811 | PktQuestUpdateResult | Without prefix, Result (uint64) reads as `473219496673280`; with prefix, reads as `110180` (valid quest ID) |
+| 2046 | PktChatReportAndBanInfoReadResult | Without prefix, BanReason string length is invalid; with prefix, decodes as empty string correctly |
+
+**Detection method**: For packets with known field types, try decoding both with and without a 4-byte skip. If the skipped version produces valid string lengths, reasonable integer ranges, or correct float coordinates, the packet has a base class prefix.
+
+There is no known static indicator in the binary or JSON metadata to predict which packets have this prefix. The `serialize_va` addresses in `packet_definitions.json` differ between base and non-base packets but don't share a common function. This likely reflects a C++ inheritance hierarchy where certain intermediate classes override `Serialize()`.
+
+### Type Corrections
+
+The vtable-based type extraction in `packet_field_types_v2.json` can misidentify field types that share the same byte width:
+
+| JSON Type | Actual Type | How to tell |
+|-----------|-------------|-------------|
+| `int32` | `float` | Field name contains Pos, Target, Dir, Yaw, Pitch, Roll; value makes sense as coordinate |
+| `int32` | `int8` + padding | Alignment shifts subsequent fields; int8 confirmed by obj_offset gaps of 1 byte |
+
+The v2 extraction tool now correctly identifies `float`, `int8`, and `uint16` types via improved FArchive vtable dispatch.
