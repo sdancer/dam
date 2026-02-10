@@ -22,24 +22,24 @@
     },
     "total_packets": 1180,
     "type_stats": {
-      "string": 162,
-      "int32": 332,
-      "bool": 115,
-      "uint8": 170,
-      "uint32": 308,
-      "uint16": 28,
-      "struct": 662,
-      "int64": 277,
+      "string": 164,
+      "int32": 295,
+      "bool": 116,
+      "uint8": 168,
+      "uint32": 306,
+      "uint16": 34,
+      "struct": 650,
+      "int64": 290,
       "unknown": 209,
-      "FName": 11,
+      "FName": 7,
       "int16": 4,
-      "uint64": 68,
+      "uint64": 56,
       "TMap<FString,int32>": 2,
-      "FVector": 20,
-      "int8": 66,
-      "TArray<struct>": 18,
+      "FVector": 32,
+      "int8": 68,
+      "TArray<struct>": 20,
+      "float": 37,
       "FVector2D": 2,
-      "bytes": 6,
       "TSet<int32>": 7,
       "TMap<uint8,FString>": 4,
       "TMap<FString,int8>": 1,
@@ -2148,17 +2148,17 @@
       "fields": [
         {
           "name": "Pos",
-          "type": "struct",
+          "type": "FVector",
           "obj_offset": "0x10"
         },
         {
           "name": "Time",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x28"
         },
         {
           "name": "Achievement",
-          "type": "uint64",
+          "type": "int64",
           "obj_offset": "0x30"
         }
       ],
@@ -2252,7 +2252,7 @@
       "fields": [
         {
           "name": "Result",
-          "type": "struct",
+          "type": "FVector",
           "obj_offset": "0x10"
         }
       ],
@@ -2279,17 +2279,17 @@
       "fields": [
         {
           "name": "Pos",
-          "type": "uint64",
+          "type": "int64",
           "obj_offset": "0x10"
         },
         {
           "name": "SpeedFactor",
-          "type": "struct",
+          "type": "FVector",
           "obj_offset": "0x18"
         },
         {
           "name": "Param",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x30"
         }
       ],
@@ -2311,27 +2311,27 @@
       "fields": [
         {
           "name": "CharacterId",
-          "type": "uint64",
+          "type": "int64",
           "obj_offset": "0x10"
         },
         {
           "name": "Yaw",
-          "type": "struct",
+          "type": "FVector",
           "obj_offset": "0x18"
         },
         {
           "name": "SpeedFactor",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x30"
         },
         {
           "name": "Param",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x34"
         },
         {
           "name": "Result",
-          "type": "FName",
+          "type": "string",
           "obj_offset": "0x38"
         }
       ],
@@ -2491,7 +2491,7 @@
       "fields": [
         {
           "name": "CharacterId",
-          "type": "struct",
+          "type": "FVector",
           "obj_offset": "0x10"
         }
       ],
@@ -2599,17 +2599,17 @@
       "fields": [
         {
           "name": "Pos",
-          "type": "struct",
+          "type": "FVector",
           "obj_offset": "0x10"
         },
         {
           "name": "Param",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x28"
         },
         {
           "name": "Time",
-          "type": "FName",
+          "type": "string",
           "obj_offset": "0x30"
         }
       ],
@@ -2631,17 +2631,17 @@
       "fields": [
         {
           "name": "CharacterId",
-          "type": "uint64",
+          "type": "int64",
           "obj_offset": "0x10"
         },
         {
           "name": "Yaw",
-          "type": "struct",
+          "type": "FVector",
           "obj_offset": "0x18"
         },
         {
           "name": "Param",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x30"
         }
       ],
@@ -3328,12 +3328,12 @@
       "fields": [
         {
           "name": "PosX",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x10"
         },
         {
           "name": "Yaw",
-          "type": "bytes",
+          "type": "uint16",
           "obj_offset": "0x14"
         },
         {
@@ -3343,17 +3343,17 @@
         },
         {
           "name": "TargetActorId",
-          "type": "uint64",
+          "type": "int64",
           "obj_offset": "0x20"
         },
         {
           "name": "TargetPosX",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x28"
         },
         {
           "name": "TargetPosY",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x2c"
         }
       ],
@@ -3369,12 +3369,12 @@
         },
         {
           "name": "TargetPosX",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x14"
         },
         {
           "name": "TargetPosY",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x18"
         }
       ],
@@ -3385,17 +3385,17 @@
       "fields": [
         {
           "name": "ActorId",
-          "type": "uint64",
+          "type": "int64",
           "obj_offset": "0x10"
         },
         {
           "name": "Dir",
-          "type": "struct",
+          "type": "FVector",
           "obj_offset": "0x18"
         },
         {
           "name": "SkillInfoId",
-          "type": "FName",
+          "type": "struct",
           "obj_offset": "0x30"
         },
         {
@@ -3405,12 +3405,12 @@
         },
         {
           "name": "TargetPosX",
-          "type": "uint64",
+          "type": "int64",
           "obj_offset": "0x60"
         },
         {
           "name": "TargetPosY",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x68"
         }
       ],
@@ -3421,17 +3421,17 @@
       "fields": [
         {
           "name": "Tid",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0xc"
         },
         {
           "name": "PosY",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x10"
         },
         {
           "name": "Yaw",
-          "type": "bytes",
+          "type": "uint16",
           "obj_offset": "0x14"
         },
         {
@@ -3441,27 +3441,27 @@
         },
         {
           "name": "TargetActorId",
-          "type": "uint64",
+          "type": "int64",
           "obj_offset": "0x20"
         },
         {
           "name": "TargetPosX",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x28"
         },
         {
           "name": "TargetPosY",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x2c"
         },
         {
           "name": "DelayFire",
-          "type": "bytes",
+          "type": "uint16",
           "obj_offset": "0x30"
         },
         {
           "name": "Time",
-          "type": "uint64",
+          "type": "int64",
           "obj_offset": "0x38"
         }
       ],
@@ -3472,7 +3472,7 @@
       "fields": [
         {
           "name": "Result",
-          "type": "int32",
+          "type": "int8",
           "obj_offset": "0x10"
         },
         {
@@ -3482,32 +3482,32 @@
         },
         {
           "name": "TargetPosX",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x18"
         },
         {
           "name": "TargetPosY",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x1c"
         },
         {
           "name": "ComboCount",
-          "type": "bytes",
+          "type": "uint16",
           "obj_offset": "0x20"
         },
         {
           "name": "CoolTime",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x24"
         },
         {
           "name": "ChangeList",
-          "type": "struct",
+          "type": "TArray<struct>",
           "obj_offset": "0x28"
         },
         {
           "name": "SkillHitData",
-          "type": "FName",
+          "type": "struct",
           "obj_offset": "0x38"
         }
       ],
@@ -3518,7 +3518,7 @@
       "fields": [
         {
           "name": "Tid",
-          "type": "int32",
+          "type": "int8",
           "obj_offset": "0x10"
         },
         {
@@ -3528,27 +3528,27 @@
         },
         {
           "name": "Dir",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x18"
         },
         {
           "name": "SkillInfoId",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x1c"
         },
         {
           "name": "TargetActorId",
-          "type": "bytes",
+          "type": "uint16",
           "obj_offset": "0x20"
         },
         {
           "name": "TargetPosX",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x24"
         },
         {
           "name": "TargetPosY",
-          "type": "struct",
+          "type": "TArray<struct>",
           "obj_offset": "0x28"
         }
       ],
@@ -3874,7 +3874,7 @@
       "fields": [
         {
           "name": "Result",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x10"
         }
       ],
@@ -3945,12 +3945,12 @@
       "fields": [
         {
           "name": "Result",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x10"
         },
         {
           "name": "IsActive",
-          "type": "bytes",
+          "type": "uint16",
           "obj_offset": "0x14"
         }
       ],
@@ -4009,7 +4009,7 @@
       "fields": [
         {
           "name": "StartNotifyList",
-          "type": "uint64",
+          "type": "int64",
           "obj_offset": "0x10"
         }
       ],
@@ -7504,27 +7504,27 @@
         {
           "name": "QuestInfoId",
           "type": "uint64",
-          "obj_offset": "0x18"
+          "obj_offset": "0x10"
         },
         {
           "name": "Ratation",
-          "type": "int32",
-          "obj_offset": "0x20"
+          "type": "int64",
+          "obj_offset": "0x18"
         },
         {
           "name": "Duratoin",
-          "type": "int32",
-          "obj_offset": "0x24"
+          "type": "float",
+          "obj_offset": "0x20"
         },
         {
           "name": "PlayWithAnim",
-          "type": "uint8",
-          "obj_offset": "0x28"
+          "type": "float",
+          "obj_offset": "0x24"
         },
         {
           "name": "NpcId",
-          "type": "uint64",
-          "obj_offset": "0x30"
+          "type": "bool",
+          "obj_offset": "0x28"
         }
       ],
       "alloc_size": 56
@@ -7534,32 +7534,32 @@
       "fields": [
         {
           "name": "Result",
-          "type": "int32",
-          "obj_offset": "0xc"
+          "type": "uint64",
+          "obj_offset": "0x10"
         },
         {
           "name": "DialogSequenceInfoId",
-          "type": "uint64",
+          "type": "int64",
           "obj_offset": "0x18"
         },
         {
           "name": "Ratation",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x20"
         },
         {
           "name": "Duratoin",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x24"
         },
         {
           "name": "PlayWithAnim",
-          "type": "uint8",
+          "type": "bool",
           "obj_offset": "0x28"
         },
         {
           "name": "NpcId",
-          "type": "uint64",
+          "type": "int64",
           "obj_offset": "0x30"
         }
       ],
@@ -7590,13 +7590,13 @@
         },
         {
           "name": "Time",
-          "type": "int64",
-          "obj_offset": "0x48"
+          "type": "float",
+          "obj_offset": "0x40"
         },
         {
           "name": "Sync",
-          "type": "bool",
-          "obj_offset": "0x50"
+          "type": "int64",
+          "obj_offset": "0x48"
         }
       ],
       "alloc_size": 88
@@ -7606,28 +7606,28 @@
       "fields": [
         {
           "name": "Result",
-          "type": "uint32",
-          "obj_offset": "0xc"
-        },
-        {
-          "name": "DialogSequenceInfoId",
           "type": "uint64",
           "obj_offset": "0x10"
         },
         {
-          "name": "Pos",
+          "name": "DialogSequenceInfoId",
           "type": "int64",
           "obj_offset": "0x18"
         },
         {
-          "name": "NpcId",
+          "name": "Pos",
           "type": "FVector",
           "obj_offset": "0x20"
         },
         {
-          "name": "Yaw",
+          "name": "NpcId",
           "type": "int64",
           "obj_offset": "0x38"
+        },
+        {
+          "name": "Yaw",
+          "type": "float",
+          "obj_offset": "0x40"
         },
         {
           "name": "Time",
@@ -7673,28 +7673,28 @@
       "fields": [
         {
           "name": "Result",
-          "type": "uint32",
-          "obj_offset": "0xc"
-        },
-        {
-          "name": "DialogInfoId",
           "type": "uint64",
           "obj_offset": "0x10"
         },
         {
-          "name": "MemberCount",
+          "name": "DialogInfoId",
           "type": "int64",
           "obj_offset": "0x18"
         },
         {
-          "name": "Skipped",
-          "type": "int32",
+          "name": "MemberCount",
+          "type": "float",
           "obj_offset": "0x20"
+        },
+        {
+          "name": "Skipped",
+          "type": "float",
+          "obj_offset": "0x24"
         },
         {
           "name": "SkipRequestCharacterIdList",
           "type": "bool",
-          "obj_offset": "0x24"
+          "obj_offset": "0x28"
         }
       ],
       "alloc_size": 56
@@ -18502,32 +18502,32 @@
         },
         {
           "name": "Dir",
-          "type": "struct",
+          "type": "FVector",
           "obj_offset": "0x10"
         },
         {
           "name": "Radius",
-          "type": "struct",
+          "type": "FVector",
           "obj_offset": "0x28"
         },
         {
           "name": "Angle",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x40"
         },
         {
           "name": "ExtentX",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x44"
         },
         {
           "name": "ExtentY",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x48"
         },
         {
           "name": "Duration",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x4c"
         },
         {
@@ -18537,7 +18537,7 @@
         },
         {
           "name": "ColorIdx",
-          "type": "int32",
+          "type": "float",
           "obj_offset": "0x54"
         },
         {
@@ -18557,12 +18557,12 @@
       "fields": [
         {
           "name": "Type",
-          "type": "struct",
+          "type": "FVector",
           "obj_offset": "0x10"
         },
         {
           "name": "DataCont",
-          "type": "struct",
+          "type": "FVector",
           "obj_offset": "0x28"
         }
       ],

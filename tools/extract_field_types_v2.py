@@ -177,6 +177,13 @@ def find_field_offset(insns, call_idx, obj_reg):
             if _check_obj_reg(jrn, obj_reg):
                 return jimm
 
+        # LDR S0, [Xn, #imm*4] (pass float by value via float register)
+        if (jraw & 0xFFC0001F) == 0xBD400000:
+            jrn = (jraw >> 5) & 0x1F
+            jimm = ((jraw >> 10) & 0xFFF) * 4
+            if _check_obj_reg(jrn, obj_reg):
+                return jimm
+
         # Stop at another call (BL, B, BLR, BR)
         if (decode_bl(jraw, insns[j][0]) is not None or
             decode_b(jraw, insns[j][0]) is not None or
@@ -228,6 +235,13 @@ def find_v1_type_from_x1_setup(insns, call_idx, obj_reg):
             jimm = ((jraw >> 10) & 0xFFF) * 8
             if _check_obj_reg(jrn, obj_reg):
                 return jimm, "int64"
+
+        # LDR S0, [Xn, #imm*4] → float (loaded via float register)
+        if (jraw & 0xFFC0001F) == 0xBD400000:
+            jrn = (jraw >> 5) & 0x1F
+            jimm = ((jraw >> 10) & 0xFFF) * 4
+            if _check_obj_reg(jrn, obj_reg):
+                return jimm, "float"
 
         if decode_bl(jraw, insns[j][0]) is not None or (jraw & 0xFFFFFC1F) == 0xD63F0000:
             break
