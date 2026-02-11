@@ -1,5 +1,5 @@
-# Large binaries
-lib/
+# Large binaries (APK extracted native libs)
+/lib/
 com.netmarble.thered.apk
 config.*.apk
 
@@ -12,3 +12,10 @@ config.*.apk
 META-INF/
 stamp-cert-sha256
 __pycache__/
+
+# Elixir build artifacts
+proxy_ex/_build/
+proxy_ex/deps/
+proxy_ex/captures/
+proxy_ex/log/
+proxy_ex/erl_crash.dump
